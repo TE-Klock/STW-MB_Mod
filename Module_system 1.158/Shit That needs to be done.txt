@@ -1,7 +1,17 @@
+#Shit That needs to be done
+
+1.Implement alternative weapon modes to Pole arms and Half sword to swords
+
+2.?faction based insults - Mission template
+something like: is agent alive,faction=Fuck
+
+3. Add item description to certain things
+Done in: Module_scripts. look to "Script_game_get_item_extra_text"
+
+
+Backup!!!!!
 #STW
 #Pole-arms
-
-
 #Helmets
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helm", "Visored Sallet Helm", [("sallet_Test_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],

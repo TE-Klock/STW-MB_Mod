@@ -1212,12 +1212,23 @@ items = [
 
 ["practice_bow_2","Practice Bow", [("hunting_bow",0), ("hunting_bow_carry",ixmesh_carry)], itp_type_bow |itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back, 0, weight(1.5)|spd_rtng(90) | shoot_speed(40) | thrust_damage(21, blunt),imodbits_bow ],
 ["practice_arrows_2","Practice Arrows", [("arena_arrow",0),("flying_missile",ixmesh_flying_ammo),("quiver", ixmesh_carry)], itp_type_arrows, itcf_carry_quiver_back, 0,weight(1.5)|weapon_length(95)|max_ammo(80),imodbits_missile],
-#
 #STW
-#Pole-arms## I fucking hate everything
-"awlpike_long",  "Long Awlpike", [("awl_pike_a",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
- 385 , weight(2.25)|difficulty(0)|spd_rtng(89) | weapon_length(185)|swing_damage(20 , blunt) | thrust_damage(32 ,  pierce),imodbits_polearm ],
-
+#Pole-arms## Balancing needs to be done.
+["poleaxe_jam",  "Pole-axe", [("Poleaxe",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 682 , weight(4.25)|difficulty(0)|spd_rtng(90) | weapon_length(180)|swing_damage(48 ,cut) | thrust_damage(32 ,  pierce),imodbits_polearm ],
+["fpoleaxe_jam",  "Pole-axe", [("FPoleaxe",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 682 , weight(4.25)|difficulty(0)|spd_rtng(90) | weapon_length(180)|swing_damage(32 ,blunt) | thrust_damage(32 ,  pierce),imodbits_polearm ],
+["glaive_small",  "Glaive", [("we_swa_spear_glaive_small",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 341 , weight(3.00)|difficulty(0)|spd_rtng(100) | weapon_length(152)|swing_damage(32 ,cut) | thrust_damage(28 ,  pierce),imodbits_polearm ],
+["glaive_large",  "Glaive", [("we_swa_spear_glaive",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 321 , weight(3.00)|difficulty(0)|spd_rtng(100) | weapon_length(145)|swing_damage(37 ,cut) | thrust_damage(22 ,  pierce),imodbits_polearm ],
+["polhammer",  "Polehammer", [("we_vae_spear_polehammer_short",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 321 , weight(3.00)|difficulty(0)|spd_rtng(90) | weapon_length(116)|swing_damage(25 ,blunt) | thrust_damage(28 ,  pierce),imodbits_polearm ],
+["lucerne_hammer",  "Lucerne Hammer", [("luc_marteau_de_lucerne",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 321 , weight(3.00)|difficulty(0)|spd_rtng(85) | weapon_length(145)|swing_damage(26 ,blunt) | thrust_damage(23 ,  pierce),imodbits_polearm ],
+["scorpion",  "Scorpion", [("we_rho_spear_scorpion",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
+ 321 , weight(3.00)|difficulty(0)|spd_rtng(100 | weapon_length(150)|swing_damage(48 ,cut) | thrust_damage(22 ,  pierce),imodbits_polearm ], 
+ 
 #Helmets
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helm", "Visored Sallet Helm", [("sallet_Test_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
