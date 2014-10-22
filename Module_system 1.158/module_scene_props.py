@@ -855,7 +855,8 @@ scene_props = [
   ("castle_h_house_b",0,"castle_h_house_b","bo_castle_h_house_b", []),
   ("castle_h_house_c",0,"castle_h_house_c","bo_castle_h_house_b", []),
   ("castle_h_battlement_barrier",0,"castle_h_battlement_barrier","bo_castle_h_battlement_barrier", []),
-
+  #STW
+  ("castle_h_house_c",0,"castle_h_house_c","bo_castle_h_house_b", []),
 
 
 

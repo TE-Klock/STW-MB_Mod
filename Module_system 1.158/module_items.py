@@ -1226,9 +1226,6 @@ items = [
  321 , weight(3.00)|difficulty(0)|spd_rtng(90) | weapon_length(116)|swing_damage(25 ,blunt) | thrust_damage(28 ,  pierce),imodbits_polearm ],
 ["lucerne_hammer",  "Lucerne Hammer", [("luc_marteau_de_lucerne",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
  321 , weight(3.00)|difficulty(0)|spd_rtng(85) | weapon_length(145)|swing_damage(26 ,blunt) | thrust_damage(23 ,  pierce),imodbits_polearm ],
-["scorpion",  "Scorpion", [("we_rho_spear_scorpion",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear|itcf_carry_spear,
- 321 , weight(3.00)|difficulty(0)|spd_rtng(100 | weapon_length(150)|swing_damage(48 ,cut) | thrust_damage(22 ,  pierce),imodbits_polearm ], 
- 
 #Helmets
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helm", "Visored Sallet Helm", [("sallet_Test_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
