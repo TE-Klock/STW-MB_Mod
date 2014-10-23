@@ -248,8 +248,8 @@ strings = [
   ("cant_use_inventory_arena","Can't access inventory in the arena."),
   ("cant_use_inventory_disguised","Can't access inventory while you're disguised."),
   ("cant_use_inventory_tutorial","Can't access inventory in the training camp."),
-  ("1_denar", "1 denar"),
-  ("reg1_denars", "{reg1} denars"),
+  ("1_denar", "1 Riksdal"),
+  ("reg1_denars", "{reg1} Riksdaler"),
   ("january_reg1_reg2", "January {reg1}, {reg2}"),
   ("february_reg1_reg2", "February {reg1}, {reg2}"),
   ("march_reg1_reg2", "March {reg1}, {reg2}"),
@@ -316,11 +316,11 @@ strings = [
 
   ("troop_relation_increased", "Your relation with {s1} has increased from {reg1} to {reg2}."),
   ("troop_relation_detoriated", "Your relation with {s1} has deteriorated from {reg1} to {reg2}."),
-  ("faction_relation_increased", "Your relation with {s1} has increased from {reg1} to {reg2}."),
-  ("faction_relation_detoriated", "Your relation with {s1} has deteriorated from {reg1} to {reg2}."),
+  ("faction_relation_increased", "Relations with {s1} has increased from {reg1} to {reg2}."),
+  ("faction_relation_detoriated", "Relations with {s1} has deteriorated from {reg1} to {reg2}."),
   
-  ("party_gained_morale", "Your party gains {reg1} morale."),
-  ("party_lost_morale",   "Your party loses {reg1} morale."),
+  ("party_gained_morale", "party gains {reg1} morale."),
+  ("party_lost_morale",   "party loses {reg1} morale."),
   ("other_party_gained_morale", "{s1} gains {reg1} morale."),
   ("other_party_lost_morale",   "{s1} loses {reg1} morale."),
 
@@ -1078,7 +1078,7 @@ strings = [
   ("npc13_personalityclash_speech_b", "Valorous deeds are all very well, but they are not the only goals worth pursuing in life. Personally, I never trust any man who has not at least once woken up drunk in a ditch, or been beaten by the slipper of his lover."),
   ("npc14_personalityclash_speech_b", "That chit {s11} saw fit to admonish me for this. I will not have my methods questioned in front of the men, and I will not serve any commander who tolerates such insubordination in his company. Thank you for allowing me to speak my peace."),
   ("npc15_personalityclash_speech_b", "What's more, I suspect she's a thief. I found her going through my baggage and pawing some of my schematics, and she pulled a knife on me when I thought fit to object. A wise captain would not allow her in his company."),
-  ("npc16_personalityclash_speech_b", "Fearing witchcraft, I asked him about it, and he told me that a chit of a girl like myself should mind her own business. So I had a look in his baggage, and found strange plans and diagrams. I think he's a sorceror, {sir/madame}, and if I catch him trying to hex me he'll have a knife in his throat."),
+  ("npc16_personalityclash_speech_b", "Fearing witchcraft, I asked him about it, and he told me that a chit of a girl like myself should mind her own business. So I had a look in his baggage, and found strange plans and diagrams. I think he's a sorcerer, {sir/madame}, and if I catch him trying to hex me he'll have a knife in his throat."),
 
  
 ### set off by behavior after victorious battle
@@ -1460,7 +1460,7 @@ strings = [
 #The game will select the first comment in each block which meets all the tag requirements
 
 #Beginning of game comments
-("comment_intro_liege_affiliated", "I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk."),
+("comment_intro_liege_affiliated", "I am told that you are pledged to one of the pretenders who disputes my claim to the  of Calradia. But we may still talk."),
 
 ("comment_intro_famous_liege", "Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor."),
 ("comment_intro_famous_martial", "Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!"),

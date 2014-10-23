@@ -35,6 +35,57 @@ from module_constants import *
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
+dedal_tavern_animations = (
+	ti_on_agent_spawn,1,0,[
+		(eq, "$talk_context", tc_tavern_talk),
+		(store_trigger_param_1,":agent"),
+		(agent_get_troop_id,":troop",":agent"),
+		(try_begin),
+			(is_between,":troop","trp_musican_male","trp_musicans_end"),
+			(try_begin),
+				(agent_has_item_equipped,":agent","itm_dedal_lutnia"),
+				(agent_set_stand_animation, ":agent", "anim_lute_sitting"),
+				(agent_set_animation, ":agent", "anim_lute_sitting"),
+				(agent_play_sound,":agent","snd_dedal_tavern_lute"),
+			(else_try),
+				(agent_has_item_equipped,":agent","itm_dedal_lira"),
+				(agent_set_stand_animation, ":agent", "anim_lyre_sitting"),
+				(agent_set_animation, ":agent", "anim_lyre_sitting"),
+				(agent_play_sound,":agent","snd_dedal_tavern_lyre"),
+			(try_end),
+			(store_random_in_range,":r",0,300),
+			(agent_set_animation_progress,":agent",":r"),
+		(else_try),
+			(is_between,":troop",tavern_minstrels_begin,tavern_minstrels_end),
+			(try_begin),
+				(agent_has_item_equipped,":agent","itm_dedal_lutnia"),
+				(agent_set_stand_animation, ":agent", "anim_lute_standing"),
+				(agent_set_animation, ":agent", "anim_lute_standing"),
+				(agent_play_sound,":agent","snd_dedal_tavern_lute"),
+			(else_try),
+				(agent_has_item_equipped,":agent","itm_dedal_lira"),
+				(agent_set_stand_animation, ":agent", "anim_lyre_standing"),
+				(agent_set_animation, ":agent", "anim_lyre_standing"),
+				(agent_play_sound,":agent","snd_dedal_tavern_lyre"),
+			(try_end),
+			(store_random_in_range,":r",0,300),
+			(agent_set_animation_progress,":agent",":r"),
+		(else_try),
+			(is_between,":troop",walkers_begin,walkers_end),
+			(try_begin),
+				(agent_has_item_equipped,":agent","itm_dedal_kufel"),
+				(agent_set_stand_animation, ":agent", "anim_sitting_drinking_low"),
+				(agent_set_animation, ":agent", "anim_sitting_drinking_low"),
+				(store_random_in_range,":r",0,300),
+			(else_try),
+				(agent_set_stand_animation, ":agent", "anim_sitting_low"),
+				(agent_set_animation, ":agent", "anim_sitting_low"),
+				(store_random_in_range,":r",0,300),
+			(try_end),
+			(agent_set_animation_progress,":agent",":r"),
+		(try_end),
+	],[])
+	
 multiplayer_server_check_belfry_movement = (
   0, 0, 0, [],
   [
@@ -1265,43 +1316,53 @@ tournament_triggers = [
   ]
 
 mission_templates = [
-  (
-    "town_default",0,-1,
-    "Default town visit",
-    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-     (1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (4,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-     (8,mtef_scene_source,af_override_horse,0,1,[]),
-     (9,mtef_scene_source,af_override_horse,0,1,[]),
-     (10,mtef_scene_source,af_override_horse,0,1,[]),
-     (11,mtef_scene_source,af_override_horse,0,1,[]),
-     (12,mtef_scene_source,af_override_horse,0,1,[]),
-     (13,mtef_scene_source,0,0,1,[]),
-     (14,mtef_scene_source,0,0,1,[]),
-     (15,mtef_scene_source,0,0,1,[]),
-     (16,mtef_visitor_source,af_override_horse,0,1,[]),
-     (17,mtef_visitor_source,af_override_horse,0,1,[]),
-     (18,mtef_visitor_source,af_override_horse,0,1,[]),
-     (19,mtef_visitor_source,af_override_horse,0,1,[]),
-     (20,mtef_visitor_source,af_override_horse,0,1,[]),
-     (21,mtef_visitor_source,af_override_horse,0,1,[]),
-     (22,mtef_visitor_source,af_override_horse,0,1,[]),
-     (23,mtef_visitor_source,af_override_horse,0,1,[]),
-     (24,mtef_visitor_source,af_override_horse,0,1,[]),
-     (25,mtef_visitor_source,af_override_horse,0,1,[]),
-     (26,mtef_visitor_source,af_override_horse,0,1,[]),
-     (27,mtef_visitor_source,af_override_horse,0,1,[]),
-     (28,mtef_visitor_source,af_override_horse,0,1,[]),
-     (29,mtef_visitor_source,af_override_horse,0,1,[]),
-     (30,mtef_visitor_source,af_override_horse,0,1,[]),
-     (31,mtef_visitor_source,af_override_horse,0,1,[]),
-     ],     
-     [
+	("town_default",0,-1,
+	 "Default town visit",[
+		(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+		(1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(4,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+		(8,mtef_scene_source,af_override_horse,0,1,[]),
+		(9,mtef_scene_source,af_override_horse,0,1,[]),
+		(10,mtef_scene_source,af_override_horse,0,1,[]),
+		(11,mtef_scene_source,af_override_horse,0,1,[]),
+		(12,mtef_scene_source,af_override_horse,0,1,[]),
+		(13,mtef_scene_source,0,0,1,[]),
+		(14,mtef_scene_source,0,0,1,[]),
+		(15,mtef_scene_source,0,0,1,[]),
+		(16,mtef_visitor_source,af_override_horse,0,1,[]),
+		(17,mtef_visitor_source,af_override_horse,0,1,[]),
+		(18,mtef_visitor_source,af_override_horse,0,1,[]),
+		(19,mtef_visitor_source,af_override_horse,0,1,[]),
+		(20,mtef_visitor_source,af_override_horse,0,1,[]),
+		(21,mtef_visitor_source,af_override_horse,0,1,[]),
+		(22,mtef_visitor_source,af_override_horse,0,1,[]),
+		(23,mtef_visitor_source,af_override_horse,0,1,[]),
+		(24,mtef_visitor_source,af_override_horse,0,1,[]),
+		(25,mtef_visitor_source,af_override_horse,0,1,[]),
+		(26,mtef_visitor_source,af_override_horse,0,1,[]),
+		(27,mtef_visitor_source,af_override_horse,0,1,[]),
+		(28,mtef_visitor_source,af_override_horse,0,1,[]),
+		(29,mtef_visitor_source,af_override_horse,0,1,[]),
+		(30,mtef_visitor_source,af_override_horse,0,1,[]),
+		(31,mtef_visitor_source,af_override_horse,0,1,[]),
+		#dedal begin
+		(32,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#32
+		(33,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#33
+		(34,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#34
+		(35,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#35
+		(36,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#36
+		(37,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#37
+		(38,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#38
+		(39,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#39
+		(40,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#40
+	 ],[
+		dedal_tavern_animations,
+		#dedal end
       (1, 0, ti_once, [], 
       [
         (store_current_scene, ":cur_scene"),

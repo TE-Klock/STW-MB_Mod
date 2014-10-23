@@ -242,6 +242,12 @@ dialogs = [
                      (eq, 1, 0)],  
    "{!}Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
+   ##Tavern commoner's dialog turned off
+  [anyone|plyr,"start",[(eq,"$talk_context",tc_tavern_talk),(is_between,"$g_talk_troop",walkers_begin,walkers_end)],
+   "This person looks quite busy. I think I shouldn't interrupt...","close_window",[]],
+##Tavern random musicans dialog turned off
+  [anyone|plyr,"start",[(eq,"$talk_context",tc_tavern_talk),(is_between,"$g_talk_troop","trp_musican_male","trp_musicans_end")],
+   "This person looks quite busy. I think I shouldn't interrupt...","close_window",[]],
   [anyone, "event_triggered",
    [
      (eq, "$talk_context", tc_give_center_to_fief),

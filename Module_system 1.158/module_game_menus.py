@@ -7573,6 +7573,56 @@ game_menus = [
            (change_screen_mission),
          (try_end),
         ],"Door to the village center."),
+		 ("village_station_troops",
+      [	  
+		(party_get_slot, ":town_lord", "$current_town", slot_town_lord),
+	    (str_clear, s10),
+		  
+	    (assign, ":player_can_draw_from_garrison", 0), 
+		(try_begin), #option 1 - player is town lord
+		  (eq, ":town_lord", "trp_player"),
+		  (assign, ":player_can_draw_from_garrison", 1),
+		(else_try), #option 2 - town is unassigned and part of the player faction
+		  (store_faction_of_party, ":faction", "$g_encountered_party"),
+		  (eq, ":faction", "fac_player_supporters_faction"),			
+		  (neg|party_slot_ge, "$g_encountered_party", slot_town_lord, active_npcs_begin), #ie, zero or -1
+
+		  (assign, ":player_can_draw_from_garrison", 1),
+		(else_try), #option 3 - town was captured by player
+		  (lt, ":town_lord", 0), #ie, unassigned
+		  (store_faction_of_party, ":village_faction", "$g_encountered_party"),
+		  (eq, "$players_kingdom", ":village_faction"),
+		  
+		  (eq, "$g_encountered_party", "$g_castle_requested_by_player"),
+
+		  (str_store_string, s10, "str_retrieve_garrison_warning"),
+		  (assign, ":player_can_draw_from_garrison", 1),
+		(else_try),
+		  (lt, ":town_lord", 0), #ie, unassigned
+		  (store_faction_of_party, ":village_faction", "$g_encountered_party"),
+		  (eq, "$players_kingdom", ":village_faction"),
+		  
+		  (store_party_size_wo_prisoners, ":party_size", "$g_encountered_party"),
+		  (eq, ":party_size", 0),
+			
+		  (str_store_string, s10, "str_retrieve_garrison_warning"),
+		  (assign, ":player_can_draw_from_garrison", 1),
+		(else_try),
+		  (party_slot_ge, "$g_encountered_party", slot_town_lord, active_npcs_begin),
+		  (store_faction_of_party, ":village_faction", "$g_encountered_party"),
+		  (eq, "$players_kingdom", ":village_faction"),
+		  
+		  (troop_slot_eq, "trp_player", slot_troop_spouse, ":town_lord"),		    
+
+		  (assign, ":player_can_draw_from_garrison", 1),
+		(try_end),
+
+        (eq, ":player_can_draw_from_garrison", 1),
+      ],
+      "Manage the garrison {s10}",
+      [
+        (change_screen_exchange_members,1),
+      ]),
       ("village_buy_food",[(party_slot_eq, "$current_town", slot_village_state, 0),
                            (neg|party_slot_ge, "$current_town", slot_village_infested_by_bandits, 1),
                            ],"Buy supplies from the peasants.",
@@ -9161,10 +9211,10 @@ game_menus = [
                (val_add, ":cur_entry", 1),
              (try_end),
 			 
+             
              (try_begin),
                (party_get_slot, ":tavern_minstrel", "$current_town", slot_center_tavern_minstrel),
                (gt, ":tavern_minstrel", 0),
-			   
                (set_visitor, ":cur_entry", ":tavern_minstrel"),
                (val_add, ":cur_entry", 1),
 			 (else_try),  
@@ -9175,15 +9225,7 @@ game_menus = [
 			   (try_end),
                (party_get_slot, ":tavern_minstrel", ":alternative_town", slot_center_tavern_minstrel),			   
                (gt, ":tavern_minstrel", 0),
-			   
                (set_visitor, ":cur_entry", ":tavern_minstrel"),
-               (val_add, ":cur_entry", 1),
-             (try_end),
-			 
-             (try_begin),
-               (party_get_slot, ":tavern_bookseller", "$current_town", slot_center_tavern_bookseller),
-               (gt, ":tavern_bookseller", 0),
-               (set_visitor, ":cur_entry", ":tavern_bookseller"),
                (val_add, ":cur_entry", 1),
              (try_end),
 			 
@@ -9244,8 +9286,41 @@ game_menus = [
              
              (change_screen_mission),
            (try_end),
+   
+			#dedal begin
+		  (try_for_range,":entry",32,41),
+			  #(call_script,"script_cf_chance_depending_on_hour"),
+			  (party_get_slot, ":prosperity", "$current_town", slot_town_prosperity),
+			  (val_div, ":prosperity", 20),
+			  (store_random_in_range,":r",":prosperity",100),
+			  (gt,":r",50),#random chance of spawning
+			  (try_begin),
+				(val_mod, ":r", 10),
+				(try_begin), #1 in 10 chance, random traveller
+				  (eq, ":r", 0),
+				  (store_random_in_range,":town_walker",town_walkers_begin,town_walkers_end),
+				(else_try),
+				  (store_random_in_range, ":r", slot_faction_town_walker_male_troop, slot_faction_village_walker_male_troop),
+				  (faction_get_slot, ":slot_no", "$g_encountered_party_faction", slot_faction_culture),
+				  (faction_get_slot, ":town_walker", ":slot_no", ":r"),
+				(try_end),
+				(store_random_in_range,":dna",0,1000),
+				(mission_tpl_entry_clear_override_items,"mt_town_default",":entry"),
+				(store_random_in_range,":r",0,10),
+				(try_begin),
+				  (party_slot_ge, "$current_town", slot_town_has_tournament, 1),
+				  (val_add, ":r", 1),
+				(try_end),
+				(try_begin),
+				  (gt,":r",3),
+				  (mission_tpl_entry_add_override_item,"mt_town_default",":entry","itm_dedal_kufel"),
+				(try_end),
+				(set_visitor,":entry",":town_walker",":dna"),
+			  (try_end),
+		  (try_end),
         ],"Door to the tavern."),
-                               
+
+		
 #      ("town_smithy",[
 #          (eq,"$entry_to_town_forbidden",0),
 #          (eq,"$town_nighttime",0),
