@@ -346,6 +346,10 @@ troops = [
   ["mercenary_cavalry","Mercenary Cavalry","Mercenary Cavalry",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,no_scene,reserved,fac_commoners,
    [itm_heavy_lance,itm_bastard_sword_a,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_cuir_bouilli,itm_banded_armor,itm_hide_boots,itm_kettle_hat,itm_mail_coif,itm_flat_topped_helmet,itm_helmet_with_neckguard,itm_warhorse,itm_hunter],
    def_attrib|level(25),wp(130),knows_common|knows_riding_5|knows_ironflesh_4|knows_shield_5|knows_power_strike_4,mercenary_face_1, mercenary_face_2],
+  ["Orebro_sharpshooter","Nerike Crossbow","Nerike Crossbows",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_commoners,
+   [itm_sword_medieval_b,itm_military_pick,itm_military_hammer,itm_sniper_crossbow,itm_steel_bolts,
+   itm_cdf_m2,itm_cdf_m1,itm_cdf_c3,itm_y_mailbrig,itm_yy_hose,itm_yr_hose,itm_y_kchose,itm_leather_gloves],
+   str_14 | agi_5 | int_4 | cha_4|level(25),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (110) | wp_archery (100) | wp_crossbow (140) | wp_throwing (100),knows_common|knows_ironflesh_3|knows_shield_4|knows_power_strike_4|knows_athletics_6,rhodok_face_middle_1, rhodok_face_older_2],
   ["mercenaries_end","mercenaries_end","mercenaries_end",0,no_scene,reserved,fac_commoners,
    [],
    def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
@@ -1826,7 +1830,7 @@ troops = [
    def_attrib|str_24|agi_25|level(26),wp(180),knows_common|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,man_face_middle_1, man_face_old_2],
    
   ["belligerent_drunk","Belligerent Drunk","Belligerent Drunks",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,
-   [itm_short_tunic,itm_linen_tunic,itm_coarse_tunic, itm_tabard, itm_leather_vest, itm_woolen_hose, itm_nomad_boots, itm_blue_hose, itm_wrapping_boots, itm_fur_hat, itm_leather_cap, itm_sword_viking_1],
+   [itm_tunic_a, itm_leather_vest, itm_gs_hose, itm_pat_hose, itm_wc_hose, itm_nor_hose, itm_fur_hat, itm_leather_cap, itm_sword_viking_1, itm_buc_leather_a],
    def_attrib|str_20|agi_8|level(15),wp(500),knows_common|knows_power_strike_2|knows_ironflesh_9,    bandit_face1, bandit_face2],
 
   ["hired_assassin","Hired Assassin","Hired Assassin",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners, #they look like belligerent drunks

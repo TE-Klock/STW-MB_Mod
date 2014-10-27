@@ -1213,18 +1213,32 @@ items = [
 ["practice_bow_2","Practice Bow", [("hunting_bow",0), ("hunting_bow_carry",ixmesh_carry)], itp_type_bow |itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bow_back, 0, weight(1.5)|spd_rtng(90) | shoot_speed(40) | thrust_damage(21, blunt),imodbits_bow ],
 ["practice_arrows_2","Practice Arrows", [("arena_arrow",0),("flying_missile",ixmesh_flying_ammo),("quiver", ixmesh_carry)], itp_type_arrows, itcf_carry_quiver_back, 0,weight(1.5)|weapon_length(95)|max_ammo(80),imodbits_missile],
 #STW
+#Swords
+["german_Bastard", "German Bastard", [("sword_bastard_german",0),("scabbard_bastard_german", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(105)|swing_damage(44 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
+["Italian_bastard", "Italian Longsword", [("sword_italian",0),("scabbard_italian", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(98)|swing_damage(44 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
 #Pole-arms## Balancing needs to be done.
+["fpoleaxe",  "Poleaxe", [("FPoleaxe",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itp_can_knock_down|itcf_carry_sword_back,
+ 2800 , weight(2)|difficulty(0)|spd_rtng(97) | weapon_length(175)|swing_damage(28 , blunt) | thrust_damage(22 ,  pierce),imodbits_polearm ],
+["poleaxe",  "Poleaxe", [("Poleaxe",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itp_can_knock_down|itcf_carry_sword_back,
+ 2800 , weight(2)|difficulty(0)|spd_rtng(97) | weapon_length(175)|swing_damage(40 , cut) | thrust_damage(22 ,  pierce),imodbits_polearm ],
 ["glaive_large",  "Glaive", [("we_swa_spear_glaive",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itcf_carry_sword_back,
- 202 , weight(2)|difficulty(0)|spd_rtng(100) | weapon_length(145)|swing_damage(42 , cut) | thrust_damage(22 ,  pierce),imodbits_polearm ],
-["Luc_hammer",  "Lucerne Hammer", [("luc_marteau_de_lucerne",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itcf_carry_sword_back,
- 202 , weight(2)|difficulty(0)|spd_rtng(97) | weapon_length(145)|swing_damage(25 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
-#Helmets luc_marteau_de_lucerne
+ 923 , weight(2)|difficulty(0)|spd_rtng(100) | weapon_length(145)|swing_damage(42 , cut) | thrust_damage(22 ,  pierce),imodbits_polearm ],
+["Luc_hammer",  "Lucerne Hammer", [("luc_marteau_de_lucerne",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itp_can_knock_down|itcf_carry_sword_back,
+ 2100 , weight(2)|difficulty(0)|spd_rtng(97) | weapon_length(145)|swing_damage(25 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
+#Shields
+["buc_steel_a", "Steel Buckler", [("sh_buc_steel_a",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  697 , weight(1.5)|hit_points(700)|body_armor(17)|spd_rtng(61)|shield_width(10),imodbits_shield ],
+["buc_steel_b", "Steel Buckler", [("sh_buc_steel_b",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  697 , weight(2)|hit_points(700)|body_armor(17)|spd_rtng(61)|shield_width(15),imodbits_shield ],
+["buc_leather_a", "Buckler", [("sh_buc_leather",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 205 , weight(1)|hit_points(500)|body_armor(17)|spd_rtng(61)|shield_width(10),imodbits_shield ],
+#Helmets
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helm", "Visored Sallet Helm", [("sallet_Test_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helmb", "Visored Sallet Helm", [("sallet_Test_2",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
-#These two are causing the problem.
+#These two are causing the problem. You'll need to fix the materials for the heraldic band
 ["vsallet_helmh", "Visored Sallet Helm", [("sallet_hel_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helmhb", "Visored Sallet Helm", [("sallet_hel_2",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+#
 ["cdf_m1", "Flat-top Kettle Helmet", [("chapel-de-fer_mail1",0)], itp_merchandise| itp_type_head_armor| itp_attachment_mask ,0, 382 , weight(2.5)|abundance(100)|head_armor(28)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["cdf_m2", "Kettle Helmet", [("chapel-de-fer_mail2",0)], itp_merchandise| itp_type_head_armor| itp_attachment_mask ,0, 414 , weight(2.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["cdf_m3", "Kettle Helmet", [("chapel-de-fer_mail3",0)], itp_merchandise| itp_type_head_armor| itp_attachment_mask ,0, 414 , weight(2.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
