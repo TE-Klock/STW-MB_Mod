@@ -1254,7 +1254,7 @@ items = [
 ["buc_steel_b", "Steel Buckler", [("sh_buc_steel_b",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  697 , weight(2)|hit_points(700)|body_armor(17)|spd_rtng(61)|shield_width(15),imodbits_shield ],
 ["buc_leather_a", "Buckler", [("sh_buc_leather",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 205 , weight(1)|hit_points(500)|body_armor(17)|spd_rtng(61)|shield_width(10),imodbits_shield ],
 #Helmets
-["Armet_helm", " Armet", [("armet_01",0)], itp_merchandise|itp_covers_head| itp_type_head_armor ,0, 869 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["Armet_helm", "Armet", [("armet_01",0)], itp_merchandise|itp_covers_head| itp_type_head_armor ,0, 869 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helm", "Visored Sallet Helm", [("sallet_Test_1",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["vsallet_helmb", "Visored Sallet Helm", [("sallet_Test_2",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
@@ -1263,7 +1263,9 @@ items = [
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_circlet", ":agent_no", ":troop_no")])]],
 ["vsallet_helmhb", "Visored Sallet Helm", [("sallet_hel_2",0)], itp_merchandise| itp_type_head_armor |itp_covers_beard ,0, 712 , weight(3.0)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 #
-["Kristian_hat", "Kristian II hat", [("shlapa_brown_b",0)], itp_type_head_armor|itp_doesnt_cover_hair ,0, 811 , weight(2.5)|abundance(0)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_cloth ],
+["K_hat", "Hat", [("shlapa_brown_b",0)], itp_type_head_armor|itp_doesnt_cover_hair ,0, 811 , weight(2.5)|abundance(0)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_cloth ],
+["h_hat", "Beret", [("h_h1",0)], itp_type_head_armor|itp_doesnt_cover_hair ,0, 811 , weight(2.5)|abundance(0)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_cloth ],
+["h_hat", "Beret", [("h_h2",0)], itp_type_head_armor|itp_doesnt_cover_hair ,0, 811 , weight(2.5)|abundance(0)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_cloth ],
 ["Butterlord", "Visage of the Butterlord", [("undead_head",0)], itp_merchandise| itp_type_head_armor |itp_covers_head ,0, 811 , weight(2.5)|abundance(100)|head_armor(100)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["cdf_m1", "Flat-top Kettle Helmet", [("chapel-de-fer_mail1",0)], itp_merchandise| itp_type_head_armor| itp_attachment_mask ,0, 382 , weight(2.5)|abundance(100)|head_armor(28)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["cdf_m2", "Kettle Helmet", [("chapel-de-fer_mail2",0)], itp_merchandise| itp_type_head_armor| itp_attachment_mask ,0, 414 , weight(2.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
@@ -1346,7 +1348,7 @@ items = [
 ["Milan_platebutter", "Milanese Plate", [("Black_milanese_armour",0)], itp_type_body_armor  |itp_covers_legs ,0,
  3872 , weight(1)|abundance(0)|head_armor(0)|body_armor(100)|leg_armor(50)|difficulty(0) ,imodbits_plate ],
 #
-["plate_boots", "Plate Boots", [("plate_boots",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0,
+["plate_boots", "Plate Boots", [("steel_greaves",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0,
  1770 , weight(3.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(33)|difficulty(9) ,imodbits_plate ], 
 
 ["heraldic_mail_with_surcoat_for_tableau", "{!}Heraldic Mail with Surcoat", [("heraldic_armor_new_a",0)], itp_type_body_armor |itp_covers_legs ,0,

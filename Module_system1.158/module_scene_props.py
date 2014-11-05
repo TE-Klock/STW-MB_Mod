@@ -2977,7 +2977,7 @@ scene_props = [
   ("tannery_hide_b", 0,"tannery_hide_b","bo_tannery_hide_b", []),
   ("tannery_pools_a", 0,"tannery_pools_a","bo_tannery_pools_a", []),
   ("tannery_pools_b", 0,"tannery_pools_b","bo_tannery_pools_b", []),
-  
+# A really hamfisted way to get ambient noise in scenes, but what the fuck you going to do?  
   ("test_torch",0,"torch_a","0",
    [
    (ti_on_init_scene_prop,
@@ -2985,11 +2985,27 @@ scene_props = [
         (play_sound, "snd_stw_ambient_forest", 0),
     ]),
    ]),
-
-
-  
-  
- 
+  ("Audio_torch",0,"torch_a","0",
+   [
+   (ti_on_init_scene_prop,
+    [
+        (play_sound, "snd_stw_ambient_forest", 0),
+    ]),
+   ]),
+  ("audio_torch_tavern",0,"torch_a","0",
+   [
+   (ti_on_init_scene_prop,
+    [
+        (play_sound, "snd_stw_ambient_tavern", 0),
+    ]),
+   ]),
+  ("Audio_torch_castle",0,"torch_a","0",
+   [
+   (ti_on_init_scene_prop,
+    [
+        (play_sound, "snd_stw_ambient_castle", 0),
+    ]),
+   ]),
 
  ("fountain", 0, "fountain", "bo_fountain", []),
 

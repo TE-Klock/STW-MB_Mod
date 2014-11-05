@@ -177,7 +177,9 @@ snd_flag_returned = 175
 snd_team_scored_a_point = 176
 snd_enemy_scored_a_point = 177
 snd_stw_ambient_forest = 178
-snd_dedal_tavern_lute = 179
-snd_dedal_tavern_lyre = 180
+snd_stw_ambient_castle = 179
+snd_stw_ambient_tavern = 180
+snd_dedal_tavern_lute = 181
+snd_dedal_tavern_lyre = 182
 
 

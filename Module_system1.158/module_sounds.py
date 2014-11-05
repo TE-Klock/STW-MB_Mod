@@ -207,7 +207,11 @@ sounds = [
  ("flag_returned", sf_2d|sf_priority_10|sf_vol_10, ["your_flag_returned.ogg"]),
  ("team_scored_a_point", sf_2d|sf_priority_10|sf_vol_10, ["you_scored_a_point.ogg"]),
  ("enemy_scored_a_point", sf_2d|sf_priority_10|sf_vol_10, ["enemy_scored_a_point.ogg"]),
- ("stw_ambient_forest",	sf_priority_6|sf_vol_5|sf_2d|sf_looping, ["Ambient_test1.wav"]),
+ #STW
+ ("stw_ambient_forest",	sf_priority_6|sf_vol_5|sf_2d|sf_looping, ["stw_ambient_forest.wav"]),
+ ("stw_ambient_castle",	sf_priority_6|sf_vol_2|sf_2d|sf_looping, ["stw_ambient_castle.wav"]),
+ ("stw_ambient_tavern",	sf_priority_6|sf_vol_3|sf_2d|sf_looping, ["stw_ambient_tavern.wav"]),
+ 
  ("dedal_tavern_lute",	sf_priority_6|sf_vol_5|sf_looping, ["dedal_tavern_lute_1.ogg","dedal_tavern_lute_2.ogg","dedal_tavern_lute_3.ogg"]),
  ("dedal_tavern_lyre",	sf_priority_6|sf_vol_6|sf_looping, ["dedal_tavern_lyre_1.ogg","dedal_tavern_lyre_2.ogg","dedal_tavern_lyre_3.ogg"]),
 ]

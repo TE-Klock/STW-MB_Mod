@@ -119,7 +119,7 @@ scripts = [
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_2_troop, "trp_swadian_militia"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_3_troop, "trp_swadian_footman"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_4_troop, "trp_swadian_infantry"),
-      (faction_set_slot, "fac_culture_1",  slot_faction_tier_5_troop, "trp_swadian_knight"),
+      (faction_set_slot, "fac_culture_1",  slot_faction_tier_5_troop, "trp_kalmar_knight"),
 
       (faction_set_slot, "fac_culture_2", slot_faction_tier_1_troop, "trp_vaegir_recruit"),
       (faction_set_slot, "fac_culture_2", slot_faction_tier_2_troop, "trp_vaegir_footman"),
@@ -5981,7 +5981,7 @@ scripts = [
           (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_1"),
       
           (faction_set_slot, ":faction_no",  slot_faction_deserter_troop, "trp_swadian_deserter"),
-          (faction_set_slot, ":faction_no",  slot_faction_guard_troop, "trp_swadian_sergeant"),
+          (faction_set_slot, ":faction_no",  slot_faction_guard_troop, "trp_kalmar_knight"),
           (faction_set_slot, ":faction_no",  slot_faction_messenger_troop, "trp_swadian_messenger"),
           (faction_set_slot, ":faction_no",  slot_faction_prison_guard_troop, "trp_swadian_prison_guard"),
           (faction_set_slot, ":faction_no",  slot_faction_castle_guard_troop, "trp_swadian_castle_guard"),
@@ -25357,7 +25357,7 @@ scripts = [
       (faction_get_slot, ":guard_troop", ":center_faction", slot_faction_guard_troop),
       (try_begin),
         (le, ":guard_troop", 0),
-        (assign, ":guard_troop", "trp_swadian_sergeant"),
+        (assign, ":guard_troop", "trp_kalmar_knight"),
       (try_end),
       (set_visitor, 6, ":guard_troop"),
       (set_visitor, 7, ":guard_troop"),
