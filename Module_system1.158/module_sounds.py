@@ -1,4 +1,5 @@
 from header_sounds import *
+from ID_factions import *
 
 sounds = [
  ("click", sf_2d|sf_vol_3,["drum_3.ogg"]),
@@ -186,7 +187,8 @@ sounds = [
  ("man_hit_pierce_strong",sf_priority_5|sf_vol_10, ["man_hit_13.ogg","man_hit_29.ogg","man_hit_32.ogg","man_hit_47.ogg","man_hit_57.ogg"]),
  ("man_hit_cut_weak",sf_priority_5|sf_vol_10, ["man_hit_13.ogg","man_hit_29.ogg","man_hit_32.ogg","man_hit_47.ogg","man_hit_57.ogg"]),
  ("man_hit_cut_strong",sf_priority_5|sf_vol_10, ["man_hit_13.ogg","man_hit_29.ogg","man_hit_32.ogg","man_hit_47.ogg","man_hit_57.ogg"]),
- ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.ogg","man_victory_4.ogg","man_victory_5.ogg","man_victory_8.ogg","man_victory_15.ogg","man_victory_49.ogg","man_victory_52.ogg","man_victory_54.ogg","man_victory_57.ogg","man_victory_71.ogg","man_victory_1.mp3","man_victory_2.mp3","man_victory_3.mp3","man_victory_4.mp3","man_victory_5.mp3"]),
+ ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.ogg","man_victory_4.ogg","man_victory_5.ogg","man_victory_8.ogg","man_victory_15.ogg","man_victory_49.ogg","man_victory_52.ogg","man_victory_54.ogg","man_victory_57.ogg","man_victory_71.ogg",
+   ["man_Swed_victory_1.mp3", fac_culture_4],["man_Swed_victory_2.mp3", fac_culture_4],["man_Swed_victory_3.mp3", fac_culture_4],["man_Swed_victory_4.mp3", fac_culture_4],["man_Swed_victory_5.mp3", fac_culture_4]]),
  ("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav","Fire_Torch_Loop2.wav"]),
  ("torch_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.ogg","Fire_Torch_Loop2.wav"]),
  ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.ogg","shield_hit_cut_5.ogg"]),
