@@ -137,7 +137,7 @@ scripts = [
       (faction_set_slot, "fac_culture_4", slot_faction_tier_2_troop, "trp_nord_footman"),
       (faction_set_slot, "fac_culture_4", slot_faction_tier_3_troop, "trp_nord_trained_footman"),
       (faction_set_slot, "fac_culture_4", slot_faction_tier_4_troop, "trp_nord_warrior"),
-      (faction_set_slot, "fac_culture_4", slot_faction_tier_5_troop, "trp_nord_veteran"),
+      (faction_set_slot, "fac_culture_4", slot_faction_tier_5_troop, "trp_swed_champion_1"),
 
       (faction_set_slot, "fac_culture_5", slot_faction_tier_1_troop, "trp_rhodok_tribesman"),
       (faction_set_slot, "fac_culture_5", slot_faction_tier_2_troop, "trp_rhodok_spearman"),
@@ -202,7 +202,7 @@ scripts = [
 # Factions:
       (faction_set_slot, "fac_kingdom_1",  slot_faction_culture, "fac_culture_1"),
       (faction_set_slot, "fac_kingdom_1",  slot_faction_leader, "trp_kingdom_1_lord"),
-	  (troop_set_slot, "trp_kingdom_1_lord", slot_troop_renown, 1200),
+	  (troop_set_slot, "trp_kingdom_1_lord", slot_troop_renown, 2200),
 	  
       (faction_set_slot, "fac_kingdom_2",  slot_faction_culture, "fac_culture_2"),
       (faction_set_slot, "fac_kingdom_2",  slot_faction_leader, "trp_kingdom_2_lord"),
@@ -6014,7 +6014,7 @@ scripts = [
           (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_4"),
       
           (faction_set_slot, ":faction_no", slot_faction_deserter_troop, "trp_nord_deserter"),
-          (faction_set_slot, ":faction_no", slot_faction_guard_troop, "trp_nord_warrior"),
+          (faction_set_slot, ":faction_no", slot_faction_guard_troop, "trp_swed_champion_1"),
           (faction_set_slot, ":faction_no", slot_faction_messenger_troop, "trp_nord_messenger"),
           (faction_set_slot, ":faction_no", slot_faction_prison_guard_troop, "trp_nord_prison_guard"),
           (faction_set_slot, ":faction_no", slot_faction_castle_guard_troop, "trp_nord_castle_guard"),
