@@ -221,7 +221,7 @@ scripts = [
 	  (troop_set_slot, "trp_kingdom_5_lord", slot_troop_renown, 1200),
 
       (faction_set_slot, "fac_kingdom_6",  slot_faction_culture, "fac_culture_6"),
-      (faction_set_slot, "fac_kingdom_6",  slot_faction_leader, "trp_kingdom_6_lord"),
+      (faction_set_slot, "fac_kingdom_6",  slot_faction_leader, "trp_kingdom_4_lord"),
 	  (troop_set_slot, "trp_kingdom_6_lord", slot_troop_renown, 1200),
 	  
       (assign, ":player_faction_culture", "fac_culture_1"),

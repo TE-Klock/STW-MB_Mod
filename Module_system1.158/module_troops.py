@@ -1006,7 +1006,7 @@ troops = [
    str_7|agi_11|int_8|cha_7|level(2),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
    0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
-  ["npc16","Siegfried","Siegfried",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_rich_outfit,itm_nor_hose, itm_sword_medieval_b_small],
+  ["npc17","Siegfried","Siegfried",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_monk_robes2,itm_nor_hose, itm_sword_medieval_b_small],
    str_10|agi_9|int_12|cha_8|level(7),wp(150),knows_warrior_npc|
    knows_tracking_2|knows_engineer_4|knows_wound_treatment_2|knows_tracking_1|knows_tactics_3|knows_persuasion_3,
    0x000000018110c00e40dc6b0aa431a37200000000001cb1640000000000000000],
