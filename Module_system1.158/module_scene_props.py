@@ -3006,6 +3006,14 @@ scene_props = [
         (play_sound, "snd_stw_ambient_castle", 0),
     ]),
    ]),
+  ("Audio_torch_lets_dance",0,"torch_a","0",
+   [
+   (ti_on_init_scene_prop,
+    [
+      (is_between,reg(12),6.5,6.6),
+		(play_sound, "snd_stw_ambient_dance", 0),
+    ]),
+   ]),
 
  ("fountain", 0, "fountain", "bo_fountain", []),
 
