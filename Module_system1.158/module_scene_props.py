@@ -890,6 +890,8 @@ scene_props = [
   ("ado_fantasy_house_long",0,"ado_fantasy_house_long","bo_ado_fantasy_house_long", []),
   ("ado_fantasy_courtyard_arches",0,"ado_fantasy_courtyard_arches","bo_ado_fantasy_courtyard_arches", []),
 
+  ("castle_tower_bartizan",0,"bartizan","bo_bartizan", []),  
+  ("castle_french_gatehouse",0,"french_gatehouse_a","bo_french_gatehouse_a", []),
   ("castle_tower_a",0,"SO_tower_a","bo_SO_tower_a", []),
   ("castle_tower_b",0,"SO_tower_b","bo_SO_tower_b", []),
   ("castle_tower_c",0,"SO_tower_c","bo_SO_tower_c", []),
@@ -3010,8 +3012,11 @@ scene_props = [
    [
    (ti_on_init_scene_prop,
     [
-      (is_between,reg(12),6.5,6.6),
+     (try_begin),
+	  (is_between,reg(12),6.5,7),
 		(play_sound, "snd_stw_ambient_dance", 0),
+	  (else_try), 
+	    (play_sound, "snd_encounter_looters", 0),
     ]),
    ]),
 

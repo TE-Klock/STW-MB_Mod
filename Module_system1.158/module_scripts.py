@@ -635,9 +635,15 @@ scripts = [
 	  (party_set_slot, "p_castle_46", slot_center_ex_faction, "fac_kingdom_5"), #rhodoks claim sarranid-held weyyah
 	  (party_set_slot, "p_castle_40", slot_center_ex_faction, "fac_kingdom_6"), #sarranids claim khergit-held uhhun
 	  
+	  #Swedes want back Major cities
+	  (party_set_slot, "p_town_4", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Stockholm
+	  (party_set_slot, "p_town_5", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Västerås
+	  (party_set_slot, "p_town_7", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Kalmar
+	  (party_set_slot, "p_town_13", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Gothenburg
+	  #(party_set_slot, "p_town_3", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Örebro
 	  #Kalmar holding claim to the Rebellious Swedes., being in the middle, will have additional claims on two of their neighhbors
-	  (party_set_slot, "p_castle_15", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim vaegir-held tilbault
-	  (party_set_slot, "p_castle_22", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim khergit-held unuzdaq	  	  	  	  
+	  (party_set_slot, "p_town_1", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim sweidish-held mora
+	  (party_set_slot, "p_town_12", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim swedish-held gävle	  	  	  	  
 	  
       (call_script, "script_update_village_market_towns"),	  
 
@@ -33753,8 +33759,24 @@ scripts = [
 		(troop_set_slot, "trp_npc16", slot_troop_kingsupport_opponent, "trp_npc12"), #nizar
  		(troop_set_slot, "trp_npc16", slot_troop_town_with_contacts, "p_town_9"), #khudan
 		(troop_set_slot, "trp_npc16", slot_lord_reputation_type, lrep_roguish), #
-
-
+		
+		#test
+		(troop_set_slot, "trp_kingdom_1_lord", slot_troop_original_faction, "fac_kingdom_6"),
+		
+		(troop_set_slot, "trp_npc17", slot_troop_morality_type, tmt_aristocratic), #Siegfried
+        (troop_set_slot, "trp_npc17", slot_troop_morality_value, 4),
+        (troop_set_slot, "trp_npc17", slot_troop_2ary_morality_type, tmt_humanitarian),
+        (troop_set_slot, "trp_npc17", slot_troop_2ary_morality_value, -1),
+        (troop_set_slot, "trp_npc17", slot_troop_personalityclash_object, "trp_npc17"), #klethi
+        (troop_set_slot, "trp_npc17", slot_troop_personalityclash2_object, "trp_npc16"), #klethi - borcha
+        (troop_set_slot, "trp_npc17", slot_troop_personalitymatch_object, "trp_npc1"),  #deshavi - klethi
+        (troop_set_slot, "trp_npc17", slot_troop_home, "p_village_20"), #Uslum
+        (troop_set_slot, "trp_npc17", slot_troop_payment_request, 10),
+		(troop_set_slot, "trp_npc17", slot_troop_kingsupport_argument, argument_ruler),
+		(troop_set_slot, "trp_npc17", slot_troop_kingsupport_opponent, "trp_npc12"), #nizar
+ 		(troop_set_slot, "trp_npc17", slot_troop_town_with_contacts, "p_town_6"), #khudan
+		(troop_set_slot, "trp_npc17", slot_troop_original_faction, "fac_kingdom_5"),
+		(troop_set_slot, "trp_npc17", slot_lord_reputation_type, lrep_cunning),
 
         (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro),
 

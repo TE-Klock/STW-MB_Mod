@@ -348,12 +348,16 @@ troops = [
    def_attrib|level(25),wp(130),knows_common|knows_riding_5|knows_ironflesh_4|knows_shield_5|knows_power_strike_4,mercenary_face_1, mercenary_face_2],
   ["Orebro_sharpshooter","Nerike Crossbow","Nerike Crossbows",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_commoners,
    [itm_sword_medieval_b,itm_military_pick,itm_military_hammer,itm_sniper_crossbow,itm_steel_bolts,
-   itm_cdf_m2,itm_cdf_m1,itm_cdf_c3,itm_y_mailbrig,itm_yy_hose,itm_yr_hose,itm_y_kchose,itm_leather_gloves],
+   itm_cdf_m2,itm_felt_hat_b,itm_cdf_c3,itm_h_hat1,itm_y_mailbrig,itm_yy_hose,itm_yr_hose,itm_y_kchose,itm_leather_gloves],
    str_14 | agi_5 | int_4 | cha_4|level(25),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (110) | wp_archery (100) | wp_crossbow (140) | wp_throwing (100),knows_common|knows_ironflesh_3|knows_shield_4|knows_power_strike_4|knows_athletics_6,rhodok_face_middle_1, rhodok_face_older_2],
+  ["Orebro_Knightslayer","Nerike Windlass","Nerike Windlasses",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_commoners,
+   [itm_italian_sword,itm_military_pick,itm_military_hammer,itm_arb_crossbow,itm_steel_bolts,
+   itm_cdf_m2,itm_cdf_m1,itm_cdf_c3,itm_h_hat1,itm_y_mailbrig,itm_yy_hose,itm_yr_hose,itm_y_kchose,itm_leather_gloves],
+   str_14 | agi_5 | int_4 | cha_4|level(25),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (110) | wp_archery (100) | wp_crossbow (180) | wp_throwing (100),knows_common|knows_ironflesh_3|knows_shield_4|knows_power_strike_4|knows_athletics_6,rhodok_face_middle_1, rhodok_face_older_2],
   ["mounted_crossbowmerc","Mercenary Mounted Crossbow","Mercenary Mounted Crossbows",tf_mounted|tf_guarantee_all,0,0,fac_commoners,
    [itm_sword_medieval_b,itm_light_crossbow
    ,itm_steel_bolts,itm_steel_bolts,itm_cdf_c1,itm_cdf_c2,itm_cdf_c3,itm_r_brig,itm_g_brig,itm_o_hose,itm_nor_hose,itm_leather_gloves,itm_steppe_horse,itm_courser],
-   def_attrib|level(21),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (90) | wp_crossbow (180) | wp_throwing (130),knows_riding_7|knows_power_draw_5|knows_ironflesh_3|knows_horse_archery_7|knows_power_throw_4|knows_shield_1,rhodok_face_middle_1, rhodok_face_older_2],
+   def_attrib|level(21),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (90) | wp_crossbow (150) | wp_throwing (130),knows_riding_7|knows_power_draw_5|knows_ironflesh_3|knows_horse_archery_7|knows_power_throw_4|knows_shield_1,rhodok_face_middle_1, rhodok_face_older_2],
   ["mercenaries_end","mercenaries_end","mercenaries_end",0,no_scene,reserved,fac_commoners,
    [],
    def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
@@ -2193,17 +2197,22 @@ upgrade2(troops,"watchman","caravan_guard","mercenary_crossbowman")
 upgrade2(troops,"caravan_guard","mercenary_swordsman","mercenary_horseman")
 upgrade(troops,"mercenary_swordsman","hired_blade")
 upgrade(troops,"mercenary_horseman","mercenary_cavalry")
+upgrade(troops,"Orebro_sharpshooter","Orebro_Knightslayer")
 
+#Kalmar
 upgrade(troops,"swadian_recruit","swadian_militia")
-
 upgrade2(troops,"swadian_militia","swadian_footman","swadian_skirmisher")
 upgrade2(troops,"swadian_footman","swadian_man_at_arms","swadian_infantry")
 upgrade(troops,"swadian_infantry","swadian_sergeant")
 upgrade(troops,"swadian_skirmisher","swadian_crossbowman")
-
+#Kalmar Crossbow Branch
 upgrade(troops,"swadian_crossbowman","swadian_sharpshooter")
-
+#Kalmar Cav Branch
 upgrade(troops,"swadian_man_at_arms","swadian_knight")
+
+
+
+
 
 upgrade(troops,"vaegir_recruit","vaegir_footman")
 upgrade2(troops,"vaegir_footman","vaegir_veteran","vaegir_skirmisher")
@@ -2222,6 +2231,7 @@ upgrade(troops,"khergit_skirmisher","khergit_horseman")
 upgrade2(troops,"khergit_horseman","khergit_lancer","khergit_horse_archer")
 upgrade(troops,"khergit_horse_archer","khergit_veteran_horse_archer")
 
+#Sweden
 upgrade2(troops,"nord_recruit","nord_footman","nord_huntsman")
 upgrade2(troops,"nord_footman","nord_trained_footman","Swed_trained_spearman")
 upgrade(troops,"nord_trained_footman","nord_warrior")
@@ -2230,11 +2240,13 @@ upgrade(troops,"nord_veteran","nord_champion")
 upgrade(troops,"nord_champion","Swed_champion_1")
 upgrade(troops,"nord_huntsman","nord_archer")
 upgrade(troops,"nord_archer","nord_veteran_archer")
-
+#Spear Branch for Sweden
 upgrade(troops,"Swed_trained_spearman","Swed_veteran_spearman")
 upgrade(troops,"Swed_veteran_spearman","Swed_sergeant")
 upgrade(troops,"Swed_sergeant","Swed_Spear_sergeant")
 upgrade(troops,"Swed_Spear_sergeant","Swed_Spear_Man_at_arms")
+
+
 
 upgrade2(troops,"rhodok_tribesman","rhodok_spearman","rhodok_crossbowman")
 upgrade(troops,"rhodok_spearman","rhodok_trained_spearman")

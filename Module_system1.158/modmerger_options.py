@@ -26,7 +26,7 @@ options={
 mods_active = [
 # insert the active mod names here
 
-#    "mod1",
+    "freelancer",
 #    "mymod",
 #    "anothermod",
 ]
@@ -53,4 +53,4 @@ try:
     module_sys_info["version"]
 except KeyError:
     # assume version to be latest version that modmerger was tested on
-    module_sys_info["version"] = 1127
+    module_sys_info["version"] = 1158

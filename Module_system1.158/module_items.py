@@ -778,10 +778,10 @@ items = [
  510 , weight(5.0)|difficulty(10)|spd_rtng(92) | weapon_length(125)|swing_damage(50 , cut) | thrust_damage(18 ,  blunt),imodbits_axe ],
 ["long_axe_b_alt",         "Long War Axe", [("long_axe_b",0)], itp_type_two_handed_wpn| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  510 , weight(5.0)|difficulty(10)|spd_rtng(87) | weapon_length(125)|swing_damage(50 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
- ["long_axe_c",         "Great Long Axe", [("long_axe_c",0)], itp_type_polearm| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_next_item_as_melee|itp_unbalanced|itp_merchandise, itc_staff|itcf_carry_axe_back,
- 660 , weight(5.5)|difficulty(10)|spd_rtng(91) | weapon_length(127)|swing_damage(54 , cut) | thrust_damage(19 ,  blunt),imodbits_axe ],
-["long_axe_c_alt",      "Great Long Axe", [("long_axe_c",0)], itp_type_two_handed_wpn| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
- 660 , weight(5.5)|difficulty(10)|spd_rtng(85) | weapon_length(127)|swing_damage(54 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
+ ["long_axe_c",         "Great Long Axe", [("two_handed_battle_axe_g",0)], itp_type_polearm| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_next_item_as_melee|itp_unbalanced|itp_merchandise, itc_staff|itcf_carry_axe_back,
+ 660 , weight(5.5)|difficulty(10)|spd_rtng(91) | weapon_length(95)|swing_damage(54 , cut) | thrust_damage(19 ,  blunt),imodbits_axe ],
+["long_axe_c_alt",      "Great Long Axe", [("two_handed_battle_axe_g",0)], itp_type_two_handed_wpn| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
+ 660 , weight(5.5)|difficulty(10)|spd_rtng(85) | weapon_length(95)|swing_damage(54 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 
  ["bardiche",         "Bardiche", [("two_handed_battle_axe_d",0)], itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  291 , weight(4.75)|difficulty(10)|spd_rtng(91) | weapon_length(102)|swing_damage(47 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
@@ -1114,7 +1114,7 @@ items = [
 
 #TODO:
 #TODO: Heavy throwing Spear
-["stones",         "Stones", [("throwing_stone",0)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
+["stones",         "Stones", [("throwing_stone",0)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_stone, 1 , weight(4)|difficulty(0)|spd_rtng(85) | shoot_speed(30) | thrust_damage(16 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
 
 ["throwing_knives", "Throwing Knives", [("throwing_knife",0)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_knife, 76 , weight(2.5)|difficulty(0)|spd_rtng(121) | shoot_speed(25) | thrust_damage(19 ,  cut)|max_ammo(14)|weapon_length(0),imodbits_thrown ],
 ["throwing_daggers", "Throwing Daggers", [("throwing_dagger",0)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_knife, 193 , weight(2.5)|difficulty(0)|spd_rtng(110) | shoot_speed(24) | thrust_damage(25 ,  cut)|max_ammo(13)|weapon_length(0),imodbits_thrown ],
@@ -1156,9 +1156,9 @@ items = [
 820 , weight(3)|difficulty(8)|spd_rtng(22) | shoot_speed(90) | thrust_damage(59,pierce)|max_ammo(1),imodbits_crossbow ],
 ["heavy_crossbow", "Heavy Crossbow", [("crossbow_c",0)], itp_type_crossbow |itp_merchandise|itp_primary|itp_two_handed|itp_cant_reload_on_horseback ,itcf_shoot_crossbow|itcf_carry_crossbow_back, 
 1101 , weight(3.5)|difficulty(9)|spd_rtng(22) | shoot_speed(110) | thrust_damage(68 ,pierce)|max_ammo(1),imodbits_crossbow ],
-["sniper_crossbow", "Siege Crossbow", [("crossbow_c",0)], itp_type_crossbow |itp_merchandise|itp_primary|itp_two_handed|itp_cant_reload_on_horseback ,itcf_shoot_crossbow|itcf_carry_crossbow_back, 
+["sniper_crossbow", "Iron Prod Crossbow", [("crossbow_c",0)], itp_type_crossbow |itp_merchandise|itp_primary|itp_two_handed|itp_cant_reload_on_horseback ,itcf_shoot_crossbow|itcf_carry_crossbow_back, 
 1531 , weight(3.75)|difficulty(10)|spd_rtng(20) | shoot_speed(120) | thrust_damage(83 ,pierce)|max_ammo(1),imodbits_crossbow ],
-["arb_crossbow", "Knight Slayer", [("crossbow_arbalest",0)], itp_type_crossbow |itp_merchandise|itp_primary|itp_two_handed|itp_cant_reload_on_horseback ,itcf_shoot_crossbow|itcf_carry_crossbow_back, 
+["arb_crossbow", "Heavy Windlass Crossbow", [("crossbow_arbalest",0)], itp_type_crossbow |itp_merchandise|itp_primary|itp_two_handed|itp_cant_reload_on_horseback ,itcf_shoot_crossbow|itcf_carry_crossbow_back, 
 2561 , weight(4.5)|difficulty(10)|spd_rtng(10) | shoot_speed(150) | thrust_damage(124 ,pierce)|max_ammo(1),imodbits_crossbow ],
 ["flintlock_pistol", "Flintlock Pistol", [("flintlock_pistol",0)], itp_type_pistol |itp_merchandise|itp_primary ,itcf_shoot_pistol|itcf_reload_pistol, 230 , weight(1.5)|difficulty(0)|spd_rtng(38) | shoot_speed(160) | thrust_damage(45 ,pierce)|max_ammo(1)|accuracy(65),imodbits_none,
  [(ti_on_weapon_attack, [(play_sound,"snd_pistol_shot"),(position_move_x, pos1,27),(position_move_y, pos1,36),(particle_system_burst, "psys_pistol_smoke", pos1, 15)])]],
@@ -1166,8 +1166,8 @@ items = [
  [(ti_on_init_item, [(set_position_delta,0,60,0),(particle_system_add_new, "psys_torch_fire"),(particle_system_add_new, "psys_torch_smoke"),(set_current_color,150, 130, 70),(add_point_light, 10, 30),
 ])]],
 
-["lyre",         "Lyre", [("lyre",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
-["lute",         "Lute", [("lute",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
+["lyre","Lyre", [("lyre",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
+["lute","Lute", [("lute",0)], itp_type_shield|itp_wooden_parry|itp_civilian, itcf_carry_bow_back,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),0 ],
 
 ##["short_sword", "Short Sword",
 ## [("sword_norman",0),("sword_norman_scabbard", ixmesh_carry),("sword_norman_rusty",imodbit_rusty),("sword_norman_rusty_scabbard", ixmesh_carry|imodbit_rusty)],
@@ -1260,9 +1260,9 @@ items = [
 ["spear_wings",  "Winged Spear", [("we_rho_spear_hunting",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_staff|itcf_carry_sword_back,
  923 , weight(2)|difficulty(0)|spd_rtng(100) | weapon_length(156)|swing_damage(11 , blunt) | thrust_damage(31 ,  pierce),imodbits_polearm ],
  #Shields
-["buc_steel_a", "Steel Buckler", [("sh_buc_steel_a",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  697 , weight(1.5)|hit_points(700)|body_armor(17)|spd_rtng(61)|shield_width(10),imodbits_shield ],
-["buc_steel_b", "Steel Buckler", [("sh_buc_steel_b",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  697 , weight(2)|hit_points(700)|body_armor(17)|spd_rtng(61)|shield_width(15),imodbits_shield ],
-["buc_leather_a", "Buckler", [("sh_buc_leather",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 205 , weight(1)|hit_points(500)|body_armor(17)|spd_rtng(61)|shield_width(10),imodbits_shield ],
+["buc_steel_a", "Steel Buckler", [("sh_buc_steel_a",0)], itp_merchandise|itp_type_shield, itcf_carry_dagger_front_left,  697 , weight(1.5)|hit_points(75)|body_armor(55)|spd_rtng(61)|shield_width(10),imodbits_shield ],
+["buc_steel_b", "Steel Buckler", [("sh_buc_steel_b",0)], itp_merchandise|itp_type_shield, itcf_carry_dagger_front_left,  697 , weight(2)|hit_points(15)|body_armor(50)|spd_rtng(61)|shield_width(15),imodbits_shield ],
+["buc_leather_a", "Buckler", [("sh_buc_leather",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_dagger_front_left, 205 , weight(1)|hit_points(10)|body_armor(45)|spd_rtng(61)|shield_width(10),imodbits_shield ],
 #Helmets
 ["Armet_helm", "Armet", [("armet_01",0)], itp_merchandise|itp_covers_head| itp_type_head_armor ,0, 869 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["fer_helm", " Chapel-de-fer", [("fer",0)], itp_merchandise| itp_type_head_armor ,0, 489 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
