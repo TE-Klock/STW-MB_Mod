@@ -125,8 +125,14 @@ common_ai_order_toggle = (ti_on_order_issued, 0, 0, [
   (try_end),
 ])
 
+test_player_weapon_toggle = (0,0,1, [
+    (neg|main_hero_fallen),
+    (game_key_clicked, key_c),
+  ]
+])
 
-pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
+
+pilgrim_disguise = [itm_pilgrim_hood,itm_monk_robes1,itm_practice_staff, itm_throwing_daggers]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
 dedal_tavern_animations = (
@@ -135,10 +141,10 @@ dedal_tavern_animations = (
 		(store_trigger_param_1,":agent"),
 		(agent_get_troop_id,":troop",":agent"),
 		(try_begin),
-			(is_between,":troop","trp_musican_male","trp_musicans_end"),
+			(is_between,":troop","trp_musican_male","trp_musican_female"),
 			(try_begin),
 				(agent_has_item_equipped,":agent","itm_dedal_lutnia"),
-				(agent_set_stand_animation, ":agent", "anim_lute_sitting"),
+				(agent_set_stand_animation, ":agent", "anim_lute_sitting"),#Change to standing.
 				(agent_set_animation, ":agent", "anim_lute_sitting"),
 				(agent_play_sound,":agent","snd_dedal_tavern_lute"),
 			(else_try),

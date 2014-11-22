@@ -640,7 +640,7 @@ scripts = [
 	  (party_set_slot, "p_town_5", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Västerås
 	  (party_set_slot, "p_town_7", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Kalmar
 	  (party_set_slot, "p_town_13", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Gothenburg
-	  #(party_set_slot, "p_town_3", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Örebro
+	  (party_set_slot, "p_town_3", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Örebro
 	  #Kalmar holding claim to the Rebellious Swedes., being in the middle, will have additional claims on two of their neighhbors
 	  (party_set_slot, "p_town_1", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim sweidish-held mora
 	  (party_set_slot, "p_town_12", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim swedish-held gävle	  	  	  	  
@@ -1407,24 +1407,13 @@ scripts = [
 	  (item_set_slot, "itm_plate_boots", slot_item_multiplayer_item_class, multi_item_class_type_light_foot),
 	  (item_set_slot, "itm_khergit_leather_boots", slot_item_multiplayer_item_class, multi_item_class_type_light_foot),
 	  (item_set_slot, "itm_khergit_guard_boots", slot_item_multiplayer_item_class, multi_item_class_type_light_foot),
-
-	  
-	  
-
-	  
-
-	  
 	  
       #helmets
-	  
-	  
       (item_set_slot, "itm_leather_steppe_cap_a", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
       (item_set_slot, "itm_leather_steppe_cap_b", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
       (item_set_slot, "itm_steppe_cap", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
       (item_set_slot, "itm_khergit_war_helmet", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
       (item_set_slot, "itm_khergit_guard_helmet", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
-	  
-	  
 	  
       (item_set_slot, "itm_arming_cap", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),
       (item_set_slot, "itm_padded_coif", slot_item_multiplayer_item_class, multi_item_class_type_light_helm),

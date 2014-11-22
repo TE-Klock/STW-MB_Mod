@@ -31,18 +31,18 @@ from ID_scenes import *
 # 13) Face code (int)(2) (only applicable to regular troops, can be omitted for heroes):
 #     The game will create random faces between Face code 1 and face code 2 for generated troops
 # 14) Troop image (string): If this variable is set, the troop will use an image rather than its 3D visual during the conversations
-#  town_1   Sargoth
+#  town_1   Mora
 #  town_2   Tihr
 #  town_3   Veluca
-#  town_4   Suno
-#  town_5   Jelkala
-#  town_6   Praven
+#  town_4   Stockholm
+#  town_5   Orebro
+#  town_6   Kobenhavn
 #  town_7   Uxkhal
 #  town_8   Reyvadin
 #  town_9   Khudan
 #  town_10  Tulga
 #  town_11  Curaw
-#  town_12  Wercheg
+#  town_12  Visby
 #  town_13  Rivacheg
 #  town_14  Halmar
 ####################################################################################################################
@@ -512,16 +512,15 @@ troops = [
    [itm_sword_khergit_4,itm_tab_shield_small_round_b,itm_tab_shield_small_round_a,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_iron_greaves,itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap],
    def_attrib|level(24),wp(130),knows_athletics_5|knows_shield_2|knows_ironflesh_5,khergit_face_middle_1, khergit_face_older_2],
 
-
-  ["nord_recruit","Nord Recruit","Nord Recruits",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_4,
+  ["nord_recruit","Swede Peasant","Swede Peasants",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_4,
    [itm_axe,itm_hatchet,itm_spear,itm_tab_shield_round_a,itm_tab_shield_round_a,
-    itm_blue_tunic,itm_coarse_tunic,itm_hide_boots,itm_nomad_boots],
+    itm_blue_tunic,itm_tunic_a,itm_hide_boots,itm_nomad_boots],
    def_attrib|level(6),wp(50),knows_power_strike_1|knows_power_throw_1|knows_riding_1|knows_athletics_1,nord_face_younger_1, nord_face_old_2],
-  ["nord_footman","Nord Footman","Nord Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_4,
+  ["nord_footman","Swede Militia","Swede Militia",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_4,
    [itm_fighting_axe,itm_one_handed_war_axe_a,itm_spear,itm_tab_shield_round_a,itm_tab_shield_round_b,itm_javelin,itm_throwing_axes,
     itm_leather_cap,itm_skullcap,itm_nomad_vest,itm_leather_boots,itm_nomad_boots],
    def_attrib|level(10),wp(70),knows_ironflesh_2|knows_power_strike_2|knows_power_throw_2|knows_riding_2|knows_athletics_2|knows_shield_1,nord_face_young_1, nord_face_old_2],
-  ["nord_trained_footman","Militia","Militia",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_4,
+  ["nord_trained_footman","Militia Sword & Buckler","Militia Sword & Buckler",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_4,
    [itm_one_handed_war_axe_a,itm_one_handed_war_axe_b,itm_one_handed_battle_axe_a,itm_tab_shield_round_b,
     itm_skullcap,itm_nasal_helmet,itm_nordic_footman_helmet,itm_byrnie,itm_studded_leather_coat,itm_leather_boots],
    def_attrib|level(14),wp(100),knows_ironflesh_3|knows_power_strike_3|knows_power_throw_2|knows_riding_2|knows_athletics_3|knows_shield_2,nord_face_young_1, nord_face_old_2],
@@ -529,7 +528,7 @@ troops = [
    [itm_sword_viking_1,itm_english_bastard,itm_italian_sword,itm_buc_leather_a,itm_buc_steel_a,itm_javelin,
     itm_felt_hat_b,itm_h_hat1,itm_mail_shirt,itm_studded_leather_coat,itm_wc_hose,itm_nor_hose],
    def_attrib|level(19),wp(115),knows_ironflesh_4|knows_power_strike_4|knows_power_throw_3|knows_riding_2|knows_athletics_4|knows_shield_3,nord_face_young_1, nord_face_older_2],
-  ["nord_veteran","Nord Veteran","Swede Sword & Buckler",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_4,
+  ["nord_veteran","Swede Sword & Buckler","Swede Sword & Buckler",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_4,
    [itm_sword_viking_2,itm_sword_viking_2_small,itm_one_handed_battle_axe_b,itm_spiked_mace,itm_tab_shield_round_d,itm_javelin,itm_throwing_axes,
     itm_nordic_helmet,itm_nordic_fighter_helmet,itm_mail_hauberk,itm_mail_shirt,itm_splinted_leather_greaves,itm_leather_boots,itm_leather_gloves],
    def_attrib|level(24),wp(145),knows_ironflesh_5|knows_power_strike_5|knows_power_throw_4|knows_riding_3|knows_athletics_4|knows_shield_4,nord_face_young_1, nord_face_older_2],
@@ -541,8 +540,10 @@ troops = [
    [itm_military_cleaver_c,itm_german_bastard,itm_milan_plate,itm_plate_boots,itm_armet_helm,itm_p_gauntlets],
    def_attrib|level(45),wp(250),knows_ironflesh_7|knows_power_strike_7|knows_athletics_5,nord_face_middle_1, nord_face_older_2],
   ["Swed_champion_2","Swede Foot Knight","Swedish Foot Knights",tf_guarantee_boots|tf_guarantee_gloves|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_4,
-   [itm_poleaxe,itm_glaive_large,itm_german_bastard,itm_milan_plate,itm_plate_boots,itm_vsallet_helm,itm_armet_helm,itm_p_gauntlets],
+   [itm_poleaxe,itm_glaive_large,itm_milan_plate,itm_plate_boots,itm_vsallet_helm,itm_armet_helm,itm_p_gauntlets],
    def_attrib|level(45),wp(250),knows_ironflesh_7|knows_power_strike_7|knows_athletics_5,nord_face_middle_1, nord_face_older_2],
+
+   #Swede missile units Crossbow main, Longbow branch
   ["nord_huntsman","Nord Huntsman","Nord Huntsmen",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_4,
    [itm_arrows,itm_rawhide_coat,itm_hatchet,itm_hunting_bow,itm_hide_boots],
    str_10 | agi_5 | int_4 | cha_4|level(11),wp_one_handed (60) | wp_two_handed (60) | wp_polearm (60) | wp_archery (70) | wp_crossbow (60) | wp_throwing (60),knows_ironflesh_1|knows_power_draw_1|knows_athletics_2,nord_face_young_1, nord_face_old_2],
@@ -552,6 +553,7 @@ troops = [
   ["nord_veteran_archer","Nord Veteran Archer","Nord Veteran Archers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_4,
    [itm_bodkin_arrows,itm_sword_viking_2,itm_fighting_axe,itm_two_handed_axe,itm_long_bow,itm_mail_shirt,itm_mail_shirt,itm_byrnie,itm_leather_boots,itm_nordic_archer_helmet,itm_nordic_veteran_archer_helmet],
    str_12 | agi_5 | int_4 | cha_4|level(19),wp_one_handed (95) | wp_two_handed (95) | wp_polearm (95) | wp_archery (120) | wp_crossbow (95) | wp_throwing (95),knows_power_strike_3|knows_ironflesh_4|knows_power_draw_5|knows_athletics_7,nord_face_middle_1, nord_face_older_2],
+  
   ["nord_messenger","Nord Messenger","Nord Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_4,
    [itm_sword_viking_2,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
    str_7 | agi_21 | int_4 | cha_4|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_power_draw_5,nord_face_young_1, nord_face_older_2],
@@ -565,24 +567,24 @@ troops = [
    [itm_ashwood_pike,itm_german_bastard,itm_milan_plate,itm_plate_boots,itm_armet_helm,itm_p_gauntlets],
    def_attrib|level(45),wp(250),knows_ironflesh_7|knows_power_strike_7|knows_athletics_5,nord_face_middle_1, nord_face_older_2],
    
-  ["Swed_trained_spearman","Militia Spearman","Rhodok Trained Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_5,
+  ["Swed_trained_spearman","SP3 Militia Spearman","Rhodok Trained Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_5,
    [itm_pike,itm_spear_wings,itm_felt_hat_b,itm_padded_coif,itm_w_aketon,itm_b_aketon,itm_wc_hose,itm_gs_hose,itm_yy_hose],
    def_attrib|level(14),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (135) | wp_archery (105) | wp_crossbow (105) | wp_throwing (105),knows_common|knows_ironflesh_3|knows_shield_2|knows_power_strike_2|knows_athletics_2,rhodok_face_young_1, rhodok_face_older_2],
-  ["Swed_veteran_spearman", "Swede Veteran Spearman"," Swede Veteran Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield,0,0,fac_kingdom_5,
+  ["Swed_veteran_spearman", "SP4 Swede Veteran Spearman"," Swede Veteran Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield,0,0,fac_kingdom_5,
    [itm_spear_wings,itm_awlpike_long,itm_awlpike,
     itm_cdf_c1,itm_cdf_c2,itm_cdf_c3,itm_r_aketon,itm_wc_hose,itm_nor_hose,itm_yy_hose,itm_leather_gloves],
    def_attrib|level(19),wp_one_handed (115) | wp_two_handed (115) | wp_polearm (145) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_5|knows_shield_3|knows_power_strike_4|knows_athletics_3,rhodok_face_young_1, rhodok_face_older_2],
-  ["Swed_sergeant","Swede Pole Sergeant","Swede Sergeants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
+  ["Swed_sergeant","SP5 Swede Pole Sergeant","Swede Sergeants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
    [itm_glaive,itm_glaive_large,itm_military_hammer,itm_luc_poleaxe,itm_italian_sword,itm_awlpike_long,itm_awlpike,
     itm_cdf_m2, itm_cdf_m3,itm_b_aketon,itm_g_brig,itm_b_brig,itm_y_kchose,itm_g_kchose,itm_wc_hose,itm_leather_gloves,itm_mail_mittens],
    def_attrib|level(25),wp_one_handed (130) | wp_two_handed (115) | wp_polearm (155) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_6|knows_shield_5|knows_power_strike_5|knows_athletics_5,rhodok_face_middle_1, rhodok_face_older_2],
-  ["Swed_Spear_sergeant","Swede Pole Man at arms","Swede Man at arms",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
+  ["Swed_Spear_sergeant","SP6 Swede Pole Man at arms","Swede Man at arms",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
    [itm_glaive,itm_scorpion,itm_military_hammer,itm_luc_poleaxe,itm_military_cleaver_c,itm_luc_hammer,itm_glaive_large,itm_poleaxe,
     itm_cdf_m3, itm_vsallet_helmb,itm_vsallet_helm,itm_b_mailbrig,itm_g_mailbrig,itm_leather_gloves,itm_p_gauntlets,itm_g_kchose,itm_y_kchose,itm_o_kchose],
    def_attrib|level(32),wp_one_handed (130) | wp_two_handed (115) | wp_polearm (180) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_6|knows_shield_5|knows_power_strike_5|knows_athletics_5,rhodok_face_middle_1, rhodok_face_older_2],
-  ["Swed_Spear_Man_at_arms","Swede Man at arms","Swede Plated Man at arms",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
+  ["Swed_Spear_Man_at_arms","SP7 Swede Man at arms ","Swede Plated Man at arms",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
    [itm_glaive,itm_scorpion,itm_glaive_small,itm_luc_poleaxe,itm_military_hammer,itm_luc_hammer,itm_glaive_large,itm_poleaxe,
-    itm_german_bastard,itm_milan_plate,itm_plate_boots,itm_vsallet_helm,itm_armet_helm,itm_p_gauntlets],
+    itm_milan_plate,itm_plate_boots,itm_vsallet_helm,itm_armet_helm,itm_p_gauntlets],
    def_attrib|level(40),wp_one_handed (130) | wp_two_handed (115) | wp_polearm (225) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_6|knows_shield_5|knows_power_strike_5|knows_athletics_5,rhodok_face_middle_1, rhodok_face_older_2],
    
   ["rhodok_tribesman","Rhodok Tribesman","Rhodok Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5,
@@ -723,7 +725,7 @@ troops = [
    [itm_arrows,itm_arabian_sword_a,itm_winged_mace,itm_spear, itm_light_lance,itm_jarid,itm_nomad_bow,itm_short_bow,itm_jarid,itm_sarranid_cloth_robe, itm_sarranid_cloth_robe, itm_skirmisher_armor, itm_desert_turban, itm_turban,itm_leather_steppe_cap_b,itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_saddle_horse,itm_arabian_horse_a],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
   
-  ["black_khergit_horseman","Black Khergit Horseman","Black Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
+  ["black_khergit_horseman","Robber Knight","Robber Knights",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
    [itm_arrows,itm_sword_khergit_2,itm_scimitar,itm_scimitar,itm_winged_mace,itm_spear,itm_lance,itm_khergit_bow,itm_khergit_bow,itm_nomad_bow,itm_nomad_bow,itm_steppe_cap,itm_nomad_cap,itm_khergit_war_helmet,itm_khergit_war_helmet,itm_mail_hauberk,itm_lamellar_armor,itm_hide_boots,itm_plate_covered_round_shield,itm_plate_covered_round_shield,itm_saddle_horse,itm_steppe_horse],
    def_attrib|level(21),wp(100),knows_riding_3|knows_ironflesh_3|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
 
@@ -926,7 +928,9 @@ troops = [
   ["tavern_bookseller_2","Book_Merchant","Book_Merchant",tf_hero|tf_is_merchant|tf_randomize_face, 0, reserved, fac_commoners,[itm_fur_coat,itm_hide_boots,
                itm_book_wound_treatment_reference, itm_book_leadership, itm_book_intelligence, itm_book_trade, 
                itm_book_engineering, itm_book_weapon_mastery],def_attrib|level(5),wp(20),knows_common,merchant_face_1, merchant_face_2],
-
+  ["tavern_bookseller_3","Book_Merchant","Book_Merchant",tf_hero|tf_is_merchant|tf_randomize_face, 0, reserved, fac_commoners,[itm_fur_coat,itm_hide_boots,
+               itm_book_wound_treatment_reference, itm_book_leadership, itm_book_intelligence, itm_book_trade, 
+               itm_book_engineering, itm_book_weapon_mastery],def_attrib|level(5),wp(20),knows_common,merchant_face_1, merchant_face_2],
 # Tavern minstrel.
   ["tavern_minstrel_1","Wandering Minstrel","Minstrel",tf_hero|tf_randomize_face|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_boots, 0, reserved, fac_commoners,[itm_leather_jacket, itm_hide_boots, itm_dedal_lira],def_attrib|level(5),wp(20),knows_common,merchant_face_1,merchant_face_2], #lute
   ["tavern_minstrel_2","Wandering Bard","Minstrel",tf_hero|tf_randomize_face|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_boots, 0, reserved, fac_commoners,[itm_tunic_with_green_cape, itm_hide_boots, itm_dedal_lira],def_attrib|level(5),wp(20),knows_common,merchant_face_1,merchant_face_2],  #early harp/lyre
@@ -936,9 +940,7 @@ troops = [
   #Dedal OSP
   ["musican_male","Musican","Musican",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_short_tunic,itm_linen_tunic,itm_tabard,itm_dedal_lutnia,itm_woolen_hose,itm_blue_hose],def_attrib|level(4),wp(60),knows_common,man_face_young_1, man_face_old_2],
   ["musican_female","Musican","Musican",tf_female|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_blue_dress,itm_dress,itm_dedal_lutnia,itm_woolen_dress,itm_peasant_dress,itm_woolen_hose,itm_blue_hose,itm_wimple_a,itm_wimple_with_veil,itm_female_hood],def_attrib|level(2),wp(40),knows_common,woman_face_1,woman_face_2],
-  ["musicans_end","_","_",0,no_scene,reserved,fac_commoners,
-   [],
-   def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
+  ["musicans_end","Musican","Musican",tf_female|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_blue_dress,itm_dress,itm_dedal_lutnia,itm_woolen_dress,itm_peasant_dress,itm_woolen_hose,itm_blue_hose,itm_wimple_a,itm_wimple_with_veil,itm_female_hood],def_attrib|level(2),wp(40),knows_common,woman_face_1,woman_face_2],
   
   
   
@@ -2204,6 +2206,7 @@ upgrade(troops,"swadian_recruit","swadian_militia")
 upgrade2(troops,"swadian_militia","swadian_footman","swadian_skirmisher")
 upgrade2(troops,"swadian_footman","swadian_man_at_arms","swadian_infantry")
 upgrade(troops,"swadian_infantry","swadian_sergeant")
+upgrade(troops,"swadian_sergeant","Kalmar_knight")
 upgrade(troops,"swadian_skirmisher","swadian_crossbowman")
 #Kalmar Crossbow Branch
 upgrade(troops,"swadian_crossbowman","swadian_sharpshooter")

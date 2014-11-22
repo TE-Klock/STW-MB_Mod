@@ -60,7 +60,6 @@ map_icons = [
   ("castle_d",mcn_no_shadow,"map_castle_d", 0.35,0),
   ("town_snow",mcn_no_shadow,"map_town_snow_a", 0.35,0),
 
-
   ("castle_snow_a",mcn_no_shadow,"map_castle_snow_a", 0.35,0),
   ("castle_snow_b",mcn_no_shadow,"map_castle_snow_b", 0.35,0),
   ("mule",0,"icon_mule", 0.2,snd_footstep_grass, 0.15, 0.173, 0),
