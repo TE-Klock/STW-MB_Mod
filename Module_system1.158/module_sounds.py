@@ -212,8 +212,10 @@ sounds = [
  #STW
  ("stw_ambient_forest",	sf_priority_6|sf_vol_5|sf_2d|sf_looping, ["stw_ambient_forest.wav"]),
  ("stw_ambient_castle",	sf_priority_6|sf_vol_2|sf_2d|sf_looping, ["stw_ambient_castle.wav"]),
- ("stw_ambient_tavern",	sf_priority_6|sf_vol_3|sf_2d|sf_looping, ["stw_ambient_tavern.wav"]),
+ ("stw_ambient_tavern",	sf_priority_6|sf_vol_2|sf_2d|sf_looping, ["stw_ambient_tavern.wav"]),
  ("stw_ambient_dance",	sf_priority_6|sf_vol_3|sf_looping, ["Lets_dance.mp3"]),
+#You'll need to separate the sounds into several samples instead of just a long loop of all samples.
+ ("stw_movement_army",sf_priority_5|sf_vol_6, ["stw_march.wav"]),
  
  ("dedal_tavern_lute",	sf_priority_6|sf_vol_5|sf_looping, ["dedal_tavern_lute_1.ogg","dedal_tavern_lute_2.ogg","dedal_tavern_lute_3.ogg"]),
  ("dedal_tavern_lyre",	sf_priority_6|sf_vol_6|sf_looping, ["dedal_tavern_lyre_1.ogg","dedal_tavern_lyre_2.ogg","dedal_tavern_lyre_3.ogg"]),

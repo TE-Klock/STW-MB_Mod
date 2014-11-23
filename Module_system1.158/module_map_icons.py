@@ -25,7 +25,7 @@ map_icons = [
   ("player_horseman",0,"player_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("gray_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("vaegir_knight",0,"knight_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("flagbearer_a",0,"flagbearer_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("flagbearer_a",0,"flagbearer_b", avatar_scale, snd_stw_movement_army, 0.15, 0.173, 0),
   ("flagbearer_b",0,"flagbearer_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("peasant",0,"peasant_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   ("khergit",0,"khergit_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),

@@ -180,7 +180,8 @@ snd_stw_ambient_forest = 178
 snd_stw_ambient_castle = 179
 snd_stw_ambient_tavern = 180
 snd_stw_ambient_dance = 181
-snd_dedal_tavern_lute = 182
-snd_dedal_tavern_lyre = 183
+snd_stw_movement_army = 182
+snd_dedal_tavern_lute = 183
+snd_dedal_tavern_lyre = 184
 
 

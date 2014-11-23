@@ -286,7 +286,7 @@ scenes = [
     ["exit"],[]),
   ("town_2_tavern",sf_indoors,"viking_interior_tavern_a", "bo_viking_interior_tavern_a", (-100,-100),(100,100),-100,"0",
     ["exit"],[],"outer_terrain_town_thir_1"),
-  ("town_3_tavern",sf_indoors,"interior_rhodok_houses_b", "bo_interior_rhodok_houses_b", (-100,-100),(100,100),-100,"0",
+  ("town_3_tavern",sf_indoors,"small_tavern", "bo_small_tavern", (-100,-100),(100,100),-100,"0",
     ["exit"],[]),
   ("town_4_tavern",sf_indoors, "interior_tavern_f", "bo_interior_tavern_f", (-100,-100),(100,100),-100,"0",
     ["exit"],[]),
