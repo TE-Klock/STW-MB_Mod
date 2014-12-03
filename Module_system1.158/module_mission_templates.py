@@ -32,6 +32,15 @@ from module_constants import *
 # 
 ####################################################################################################################
 
+#Taunting system
+common_taunting_system = (
+  0, 0, 180, [(key_clicked, key_o),],
+  [
+       (get_player_agent_no, ":cool_man"),
+       (agent_get_troop_id, ":cool_trp", ":cool_man"),
+       (agent_play_sound,":cool_man","snd_cow_moo"),
+    ])
+ 
 common_player_weapon_toggle = (0,0,1, [
     (neg|main_hero_fallen),
     (game_key_clicked, gk_toggle_weapon_mode),
@@ -130,6 +139,7 @@ test_player_weapon_toggle = (0,0,1, [
     (game_key_clicked, key_c),
   ],
 [])
+
 
 
 pilgrim_disguise = [itm_pilgrim_hood,itm_monk_robes1,itm_practice_staff, itm_throwing_daggers]

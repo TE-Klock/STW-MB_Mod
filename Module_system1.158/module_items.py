@@ -1176,12 +1176,12 @@ items = [
 ["practice_arrows_2","Practice Arrows", [("arena_arrow",0),("flying_missile",ixmesh_flying_ammo),("quiver", ixmesh_carry)], itp_type_arrows, itcf_carry_quiver_back, 0,weight(1.5)|weapon_length(95)|max_ammo(80),imodbits_missile],
 
 #######################################################################
-##### STW ITEMS BEGIN ##################################################
+##### STW ITEMS BEGIN  ##################################################
 #######################################################################
 
 # Firearms
 ["fa_arquebus", "Arquebus",[("Fa_arquebus",0)],itp_type_musket|itp_cant_reload_on_horseback|itp_cant_reload_while_moving|itp_primary|itp_two_handed, itcf_reload_musket|itcf_carry_spear|itcf_shoot_musket,
- 230,weight(4)|abundance(10)|difficulty(0)|spd_rtng(15)|shoot_speed(250)|thrust_damage(125,pierce)|max_ammo(1)|accuracy(75),imodbits_none, [(ti_on_weapon_attack, [(play_sound,"snd_pistol_shot"),(position_move_x, pos1,0),(position_move_y, pos1,100),(particle_system_burst, "psys_pistol_smoke", pos1, 15)])]],
+ 2300,weight(4)|abundance(10)|difficulty(0)|spd_rtng(15)|shoot_speed(250)|thrust_damage(125,pierce)|max_ammo(1)|accuracy(75),imodbits_none, [(ti_on_weapon_attack, [(play_sound,"snd_pistol_shot"),(position_move_x, pos1,0),(position_move_y, pos1,100),(particle_system_burst, "psys_pistol_smoke", pos1, 15)])]],
 
 #Flipped weapon Osp weapons with my own edits
 ["h_alt", "Rock Pick", [("alt_iron_hammer_new",0),("iron_hammer_new",ixmesh_carry),], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_wooden_parry, itc_scimitar,
@@ -1199,7 +1199,7 @@ items = [
 ["sarranid_two_handed_pick_b", "Exotic War Pick", [("alt_handed_battle_axe_h",0),("two_handed_battle_axe_h",ixmesh_carry),], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_bonus_against_shield|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  280 , weight(3.0)|difficulty(10)|spd_rtng(90) | weapon_length(90)|swing_damage(40 , pierce) | thrust_damage(0 ,  pierce),imodbits_pick ],
 
-#Daggers /Military Equals Holster right /Civilian Equals holster left
+#Daggers /Military Equals Holster right /Civilian Equals holster left.
 ["Rondel_military","Rondel", [("rondel_dagger",0),("rondel_dagger",ixmesh_carry),("dagger_b",imodbits_good),("dagger_b_scabbard",ixmesh_carry|imodbits_good)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_right, 
 200 , weight(0.75)|difficulty(0)|spd_rtng(110) | weapon_length(45)|swing_damage(22 , cut) | thrust_damage(32 ,  pierce),imodbits_sword_high ],
 ["Rondel_civilian","Rondel", [("rondel_dagger",0),("rondel_dagger",ixmesh_carry),("dagger_b",imodbits_good),("dagger_b_scabbard",ixmesh_carry|imodbits_good)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_left, 
@@ -1224,23 +1224,24 @@ items = [
  ["Side_Sword_alt", "Side Sword", [("side_sword",0),("side_sword_scabbard", ixmesh_carry)], itp_type_polearm|itp_merchandise|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(1.5)|difficulty(0)|spd_rtng(103) | weapon_length(90)|swing_damage(28 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high],
  
+#
 ["crusader_Sword", "Crusader Sword", [("crusader_sword",0),("crusader_sword_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_next_item_as_melee|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
- 524 , weight(2.0)|difficulty(9)|spd_rtng(102) | weapon_length(100)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(102) | weapon_length(95)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
  ["crusader_Sword_alt", "Crusader Sword", [("crusader_sword",0),("scabbard_italian", ixmesh_carry)], itp_type_polearm|itp_merchandise|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(1.5)|difficulty(0)|spd_rtng(102) | weapon_length(100)|swing_damage(36 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ], 
 ["Longsword_b_Bastard", "Longsword", [("longsword_b",0),("scabbard_bastard_german", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise|itp_next_item_as_melee|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
- 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(100)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(94)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
  ["Longsword_b_Bastard_alt", "Longsword", [("longsword_b",0),("scabbard_bastard_german", ixmesh_carry)], itp_type_polearm|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(1.5)|difficulty(0)|spd_rtng(100) | weapon_length(100)|swing_damage(36 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high ],
 ["german_Bastard", "German Bastard", [("sword_bastard_german",0),("scabbard_bastard_german", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
- 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(105)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(96)|swing_damage(37 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
 ["English_Bastard", "English Bastard", [("sword_longenglish",0),("scabbard_longenglish", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
- 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(100)|swing_damage(38 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
+ 524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(93)|swing_damage(38 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
 ["German_messer", "Messer", [("sword_grosser_messer",0),("scabbard_grosser_messer", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_morningstar|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(2.0)|difficulty(9)|spd_rtng(100) | weapon_length(100)|swing_damage(44 , cut) | thrust_damage(0 ,  pierce),imodbits_sword_high ],
 ["Italian_sword", "Italian Arming sword", [("sword_italian",0),("scabbard_italian", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_next_item_as_melee|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(1.5)|difficulty(0)|spd_rtng(102) | weapon_length(95)|swing_damage(36 , cut) | thrust_damage(16 ,  pierce),imodbits_sword_high ],
- ["Italian_sword_alt", "Italian Arming sword", [("sword_italian",0),("scabbard_italian", ixmesh_carry)], itp_type_polearm|itp_merchandise|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn|itp_has_upper_stab,
+ ["Italian_sword_alt", "Italian Arming sword", [("sword_italian",0),("scabbard_italian", ixmesh_carry)], itp_type_polearm|itp_merchandise|itp_two_handed|itp_primary, itc_staff|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  524 , weight(1.5)|difficulty(0)|spd_rtng(102) | weapon_length(95)|swing_damage(36 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high ], 
 
 #Pole-arms## //Needs Balancing.
