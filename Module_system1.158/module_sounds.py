@@ -153,7 +153,7 @@ sounds = [
  ("mp_arrow_hit_target",sf_2d|sf_priority_15|sf_vol_9, ["mp_arrow_hit_target.ogg"]),
  ("blunt_hit",sf_priority_5|sf_vol_9, ["punch_1.ogg","punch_4.ogg","punch_4.ogg","punch_5.ogg"]),
  ("player_hit_by_arrow",sf_priority_10|sf_vol_10, ["player_hit_by_arrow.ogg"]),
- ("pistol_shot",sf_priority_10|sf_vol_10, ["fl_pistol.wav"]),
+ ("pistol_shot",sf_priority_10|sf_vol_10, ["stw_musketfire.wav"]),
  ("man_grunt",sf_priority_6|sf_vol_4, ["man_excercise_1.ogg","man_excercise_2.ogg","man_excercise_4.ogg"]),
  ("man_breath_hard",sf_priority_3|sf_vol_8, ["man_ugh_1.ogg","man_ugh_2.ogg","man_ugh_4.ogg","man_ugh_7.ogg","man_ugh_12.ogg","man_ugh_13.ogg","man_ugh_17.ogg"]),
  ("man_stun",sf_priority_3|sf_vol_8, ["man_stun_1.ogg"]),
@@ -214,8 +214,8 @@ sounds = [
  ("stw_ambient_castle",	sf_priority_6|sf_vol_2|sf_2d|sf_looping, ["stw_ambient_castle.wav"]),
  ("stw_ambient_tavern",	sf_priority_6|sf_vol_2|sf_2d|sf_looping, ["stw_ambient_tavern.wav"]),
  ("stw_ambient_dance",	sf_priority_6|sf_vol_3|sf_looping, ["Lets_dance.mp3"]),
-#You'll need to separate the sounds into several samples instead of just a long loop of all samples.
- ("stw_movement_army",sf_priority_5|sf_vol_6, ["stw_march.wav"]),
+#TODO: You'll need to separate the sounds into several samples instead of just a long loop of all samples.
+ ("stw_movement_army",sf_priority_5|sf_vol_6, ["STW_march01.ogg","STW_march02.ogg","STW_march03.ogg","STW_march04.ogg","STW_march05.ogg","STW_march06.ogg",]),
  
  ("dedal_tavern_lute",	sf_priority_6|sf_vol_5|sf_looping, ["dedal_tavern_lute_1.ogg","dedal_tavern_lute_2.ogg","dedal_tavern_lute_3.ogg"]),
  ("dedal_tavern_lyre",	sf_priority_6|sf_vol_6|sf_looping, ["dedal_tavern_lyre_1.ogg","dedal_tavern_lyre_2.ogg","dedal_tavern_lyre_3.ogg"]),

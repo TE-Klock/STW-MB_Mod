@@ -128,8 +128,8 @@ common_ai_order_toggle = (ti_on_order_issued, 0, 0, [
 test_player_weapon_toggle = (0,0,1, [
     (neg|main_hero_fallen),
     (game_key_clicked, key_c),
-  ]
-])
+  ],
+[])
 
 
 pilgrim_disguise = [itm_pilgrim_hood,itm_monk_robes1,itm_practice_staff, itm_throwing_daggers]
@@ -2191,22 +2191,22 @@ mission_templates = [
      (13,mtef_visitor_source,0,0,1,[]),
      (14,mtef_visitor_source,0,0,1,[]),
      (15,mtef_visitor_source,0,0,1,[]),
-     (16,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (17,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (18,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (19,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (20,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (21,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (22,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (23,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (24,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (25,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (26,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (27,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (28,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (29,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (30,mtef_visitor_source,af_castle_lord,0,1,[]),
-     (31,mtef_visitor_source,af_castle_lord,0,1,[])
+     (16,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (17,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (18,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (19,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (20,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (21,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (22,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (23,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (24,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (25,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (26,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (27,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (28,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (29,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (30,mtef_visitor_source,af_require_civilian,0,1,[]),
+     (31,mtef_visitor_source,af_require_civilian,0,1,[])
      ],
     [
       (ti_on_agent_spawn, 0, 0, [],
@@ -4217,8 +4217,8 @@ mission_templates = [
     "duel_with_lord",mtf_arena_fight|mtf_commit_casualties,-1,
     "You enter a melee fight in the arena.",
     [    
-	  (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
-	  (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
+	  (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_longsword_b_bastard,itm_armet_helm,itm_milan_plate,itm_p_gauntlets,itm_plate_boots]),
+	  (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_longsword_b_bastard,itm_armet_helm,itm_milan_plate,itm_p_gauntlets,itm_plate_boots]),
     ],
     [
       common_inventory_not_available,
