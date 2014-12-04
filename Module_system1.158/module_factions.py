@@ -50,9 +50,9 @@ factions = [
   ("robber_knights",  "{!}robber_knights", 0, 0.1, [], []),
 
   ("khergits","{!}Khergits", 0, 0.5,[("player_faction",0.0)], []),
-  ("black_khergits","{!}Black Khergits", 0, 0.5,[("player_faction",-0.3),("kingdom_1",-0.02),("kingdom_2",-0.02)], []),
+  ("black_khergits","{!}Black Khergits", 0, 0.5,[("player_faction",-0.3),("kingdom_1",-0.02),("kingdom_2",-0.02),("kingdom_3",-0.02),("kingdom_4",-0.02),("manhunters",-0.5)], []),
 
-  ("manhunters","Guardians of the Galaxy", 0, 0.5,[("outlaws",-0.6),("player_faction",0.1)], []),
+  ("manhunters","Guardians of the Galaxy", 0, 0.5,[("outlaws",-0.6),("player_faction",0.1),("black_khergits",-0.5),("commoners",-0.6)], []),
   ("deserters","Deserters", 0, 0.5,[("manhunters",-0.6),("merchants",-0.5),("player_faction",-0.1)], [], 0x888888),
   ("mountain_bandits","Mountain Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x888888),
   ("forest_bandits","Forest Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x888888),

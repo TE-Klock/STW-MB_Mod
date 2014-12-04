@@ -75,14 +75,14 @@ triggers = [
   (5.7, 0, 0.0, 
   [
     (store_num_parties_of_template, reg2, "pt_manhunters"),    
-    (lt, reg2, 4)
+    (lt, reg2, 8)
   ],
   [
     (set_spawn_radius, 1),
     (store_add, ":p_town_22_plus_one", "p_town_22", 1),
     (store_random_in_range, ":selected_town", "p_town_1", ":p_town_22_plus_one"),
     (spawn_around_party, ":selected_town", "pt_manhunters"),
-	(spawn_around_party, ":selected_town", "pt_black_khergit_raiders"),
+	(spawn_around_party, ":selected_town", "pt_robber_knights"),
   ]),
 
 

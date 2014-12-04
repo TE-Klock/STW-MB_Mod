@@ -42,7 +42,7 @@ party_templates = [
   ("manhunters","Bounty hunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-  ("black_khergit_raiders","Roving Robber Knights",icon_khergit_horseman_b|carries_goods(2),0,fac_black_khergits,bandit_personality,[(trp_black_khergit_horseman,5,5)]),
+  ("Robber_knights","Roving Robber Knights",icon_khergit_horseman_b|carries_goods(2),0,fac_black_khergits,bandit_personality,[(trp_black_khergit_horseman,5,5)]),
   ("steppe_bandits","Steppe Bandits",icon_khergit|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,4,58)]),
   ("taiga_bandits","Sami Raider",icon_khergit_horseman_b|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_butterlord,1,1)]),
   ("desert_bandits","Desert Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,4,58)]),
