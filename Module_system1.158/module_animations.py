@@ -118,7 +118,8 @@ animations = [
  ],
  ["stand_single", 0, amf_client_prediction,
    [9.0, "sword_loop01", 0, 200, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
-#   [4.0, "sword_loop02", 0, 100, arf_cyclic|arf_loop_pos_0_25],  
+   [9.0, "sword_loop02", 0, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
+   [8, "noweapon_cstance", 0, 100, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
  ],
  ["stand_greatsword", 0, amf_client_prediction,
    [6.0, "greatsword_cstance", 0, 91, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],  
@@ -1951,6 +1952,9 @@ animations = [
 	[2.05, "dedal_lyre_sitting", 3, 7, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],],
  ["lyre_standing", acf_enforce_all, amf_priority_die|amf_play,
 	[2.05, "dedal_lyre_standing", 3, 7, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],],
+	
+#Unused Animation Slots Begin Here
+
  ["unused_human_anim_50", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_51", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_52", 0, 0, [1.0, "anim_human", 0, 1, 0]],

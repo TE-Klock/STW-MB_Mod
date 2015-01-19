@@ -37,7 +37,7 @@ from module_constants import *
 
 game_menus = [
   ("start_game_0",menu_text_color(0xFF000000)|mnf_disable_all_keys,
-    "Welcome, adventurer, to Mount and Blade: Warband. Before beginning the game you must create your character. Remember that in the traditional medieval society depicted in the game, war and politics are usually dominated by male members of the nobility. That does not however mean that you should not choose to play a female character, or one who is not of noble birth. Male nobles may have a somewhat easier start, but women and commoners can attain all of the same goals -- and in fact may have a much more interesting if more challenging early game.",
+    "Welcome, adventurer, to Mount and Blade: Warband. Before beginning the game you must create your character. Remember that in the traditional medieval society depicted in the game, war and politics are usually dominated by male members of the nobility. That does not however mean that you should not choose to play a female Mary sue character, or one who is not of noble birth. Male nobles may have a somewhat easier start, but women  and commoners can attain all of the same goals -- and in fact may have a much more interesting if more challenging early game.",
     "none",
     [],
     [
@@ -53,22 +53,20 @@ game_menus = [
   ),
 
   ("start_phase_2",mnf_disable_all_keys,
-    "You hear about Calradia, a land torn between rival kingdoms battling each other for supremacy,\
- a haven for knights and mercenaries,  cutthroats and adventurers, all willing to risk their lives in pursuit of fortune, power, or glory...\
+    "You hear about Scandinavia, a Peninsula and a union torn between rival nobility battling each other for supremacy,\
+ Currently a haven for knights and mercenaries, cutthroats and adventurers, all willing to risk their lives in pursuit of fortune, power, or glory...\
  In this land which holds great dangers and even greater opportunities, you believe you may leave your past behind and start a new life.\
  You feel that finally, you hold the key of your destiny in your hands, free to choose as you will,\
- and that whatever course you take, great adventures will await you. Drawn by the stories you hear about Calradia and its kingdoms, you...",
+ and that whatever course you take, great adventures and perhaps misfortune will await you. Drawn by the stories you hear about the the lands and its kingdoms, you...",
     "none",
     [],
     [
-      ("town_1",[(eq, "$current_startup_quest_phase", 0),],"join a caravan to Praven, in the Kingdom of Swadia.",
+      ("town_1",[(eq, "$current_startup_quest_phase", 0),],"join a Merchant ship to Kobenhavn, in the Kingdom of Denmark.",
        [
          (assign, "$current_town", "p_town_6"),
          (assign, "$g_starting_town", "$current_town"),
          (assign, "$g_journey_string", "str_journey_to_praven"),
 		 (jump_to_menu, "mnu_start_phase_2_5"),
-#         (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
-#         (change_screen_return),
        ]),
        
       ("town_2",[(eq, "$current_startup_quest_phase", 0),],"join a caravan to Reyvadin, in the Kingdom of the Vaegirs.",
@@ -77,28 +75,22 @@ game_menus = [
          (assign, "$g_starting_town", "$current_town"),
          (assign, "$g_journey_string", "str_journey_to_reyvadin"),
 		 (jump_to_menu, "mnu_start_phase_2_5"),
-#         (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
-#         (change_screen_return),
        ]),
        
-      ("town_3",[(eq, "$current_startup_quest_phase", 0),],"join a caravan to Tulga, in the Khergit Khanate.",
+      ("town_3",[(eq, "$current_startup_quest_phase", 0),],"Join a Merchant ship to Lubeck, the free city of the Hanseatic league.",
        [
          (assign, "$current_town", "p_town_10"),
          (assign, "$g_starting_town", "$current_town"),
          (assign, "$g_journey_string", "str_journey_to_tulga"),
 		 (jump_to_menu, "mnu_start_phase_2_5"),
-#         (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
-#         (change_screen_return),
        ]),
        
-      ("town_4",[(eq, "$current_startup_quest_phase", 0),],"take a ship to Sargoth, in the Kingdom of the Nords.",
+      ("town_4",[(eq, "$current_startup_quest_phase", 0),],"Join a caravan to mora, in the Kingdom of the Swedes.",
        [
          (assign, "$current_town", "p_town_1"),
          (assign, "$g_starting_town", "$current_town"),
          (assign, "$g_journey_string", "str_journey_to_sargoth"),
 		 (jump_to_menu, "mnu_start_phase_2_5"),
-#         (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
-#         (change_screen_return),
        ]),
        
       ("town_5",[(eq, "$current_startup_quest_phase", 0),],"take a ship to Jelkala, in the Kingdom of the Rhodoks.",
@@ -107,8 +99,6 @@ game_menus = [
          (assign, "$g_starting_town", "$current_town"),
          (assign, "$g_journey_string", "str_journey_to_jelkala"),
 		 (jump_to_menu, "mnu_start_phase_2_5"),
-#         (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
-#         (change_screen_return),
        ]),
        
       ("town_6",[(eq, "$current_startup_quest_phase", 0),],"join a caravan to Shariz, in the Sarranid Sultanate.",
@@ -190,9 +180,6 @@ game_menus = [
 	   ),
     ]
   ),
- 
-
-
  
   (
     "start_game_3",mnf_disable_all_keys,
@@ -981,7 +968,7 @@ game_menus = [
  living mostly for the moments when you could sell something to somebody."),
 	(jump_to_menu,"mnu_start_character_2"),
     ]),
-    ("start_guard",[],"A veteran warrior.",[
+    ("start_guard",[],"A guard.",[
       (assign,"$background_type",cb_guard),
       (assign, reg3, "$character_gender"),
       (str_store_string,s10,"@As a child, your family scrabbled out a meagre living from your father's wages\
@@ -1000,11 +987,11 @@ game_menus = [
  though your brothers and sisters might not be so fortunate."),
 	(jump_to_menu,"mnu_start_character_2"),
     ]),
-    ("start_nomad",[],"A steppe nomad.",[
+    ("start_nomad",[],"A Fjord nomad.",[
       (assign,"$background_type",cb_nomad),
       (assign, reg3, "$character_gender"),
       (str_store_string,s11,"@{reg3?daughter:son}"),
-      (str_store_string,s10,"@You were a child of the steppe, born to a tribe of wandering nomads who lived\
+      (str_store_string,s10,"@You were a child of the fjords, born to a tribe of wandering sami who lived\
  in great camps throughout the arid grasslands.\
  Like the other tribesmen, your family revered horses above almost everything else, and they taught you\
  how to ride almost before you learned how to walk. "),
@@ -1293,7 +1280,7 @@ game_menus = [
     "none",
     [],
     [
-      ("revenge",[],"Personal revenge.",[
+      ("revenge",[],"Revenge.",[
         (assign,"$background_answer_4", cb4_revenge),
       (str_store_string,s13,"@Only you know exactly what caused you to give up your old life and become an adventurer.\
  Still, it was not a difficult choice to leave, with the rage burning brightly in your heart.\
@@ -1301,7 +1288,7 @@ game_menus = [
  and these debts can only be paid in blood..."),
         (jump_to_menu,"mnu_choose_skill"),
         ]),
-      ("death",[],"The loss of a loved one.",[
+      ("death",[],"Death.",[
         (assign,"$background_answer_4",cb4_loss),
       (str_store_string,s13,"@Only you know exactly what caused you to give up your old life and become an adventurer.\
  All you can say is that you couldn't bear to stay, not with the memories of those you loved so close and so\
@@ -1326,14 +1313,14 @@ game_menus = [
 ## glory of God by the time you're done..."),
 ##        (jump_to_menu,"mnu_choose_skill"),
 ##        ]),
-      ("disown",[],"Being forced out of your home.",[
+      ("disown",[],"Disownage.",[
         (assign,"$background_answer_4",cb4_disown),
       (str_store_string,s13,"@Only you know exactly what caused you to give up your old life and become an adventurer.\
  However, you know you cannot go back. There's nothing to go back to. Whatever home you may have had is gone\
  now, and you must face the fact that you're out in the wide wide world. Alone to sink or swim..."),
         (jump_to_menu,"mnu_choose_skill"),
         ]),
-     ("greed",[],"Lust for money and power.",[
+     ("greed",[],"Greed.",[
         (assign,"$background_answer_4",cb4_greed),
       (str_store_string,s13,"@Only you know exactly what caused you to give up your old life and become an adventurer.\
  To everyone else, it's clear that you're now motivated solely by personal gain.\
@@ -8832,7 +8819,7 @@ game_menus = [
         ], "Door to the castle."),
 		
       ("join_tournament", [(neg|is_currently_night),(party_slot_ge, "$current_town", slot_town_has_tournament, 1),]
-       ,"Join the tournament.",
+       ,"Join the tournament games.",
        [
            (call_script, "script_fill_tournament_participants_troop", "$current_town", 1),
            (assign, "$g_tournament_cur_tier", 0),
@@ -9369,7 +9356,7 @@ game_menus = [
 #           (party_get_slot, ":scene", "$current_town", slot_town_arena),
 #           (scene_slot_eq,  ":scene", slot_scene_visited, 1), #check if scene has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
            ],
-       "Enter the arena.",
+       "Enter the Proving grounds.",
        [
            (try_begin),
              (this_or_next|eq,"$all_doors_locked",1),
@@ -9975,7 +9962,7 @@ game_menus = [
 
   (
     "cannot_enter_court",0,
-    "There is a feast in progress in the lord's hall, but you are not of sufficient status to be invited inside. Perhaps increasing your renown would win you admittance -- or you might also try distinguishing yourself at a tournament while the feast is in progress...",
+    "There is a feast in progress in the halls of lord's, but you are of to lowly  stature to be invited inside. Perhaps increasing your renown and reputation would gain you admittance -- or you might also try distinguishing yourself at a tournament while the feast is in progress...",
     "none",
     [],
     [
@@ -10891,12 +10878,12 @@ game_menus = [
      (call_script, "script_add_log_entry", logent_helped_peasants, "trp_player",  "$current_town", -1, -1),
     ],
     [
-      ("village_bandits_defeated_accept",[],"Take it as your just due.",[(jump_to_menu, "mnu_auto_return_to_map"),
+      ("village_bandits_defeated_accept",[],"Accept the gifts, take it as your just due.",[(jump_to_menu, "mnu_auto_return_to_map"),
                                                                          (party_get_slot, ":merchant_troop", "$current_town", slot_town_elder),
                                                                          (troop_sort_inventory, ":merchant_troop"),
                                                                          (change_screen_loot, ":merchant_troop"),
                                                                        ]),
-      ("village_bandits_defeated_cont",[],  "Refuse, stating that they need these items more than you do.",[
+      ("village_bandits_defeated_cont",[],  "Refuse the gifts, stating that they need these items more than you do.",[
 	  (call_script, "script_change_player_relation_with_center", "$g_encountered_party", 3),
       (call_script, "script_change_player_honor", 1),
       (change_screen_map)]),
@@ -11471,7 +11458,7 @@ game_menus = [
   
   (
     "sneak_into_town_suceeded",0,
-    "Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.",
+    "Disguised in the garments of a poor refugee, you fool the guards and make your way into the town.",
     "none",
     [],
     [
@@ -14291,7 +14278,7 @@ game_menus = [
   
   (
     "notification_player_faction_political_issue_resolved_for_player",0,
-    "After consulting with the peers of the realm, {s10} has decided to confer {s11} on you. You may decline the honor, but it will probably mean that you will not receive other awards for a little while.{s12}",
+    "After consulting with the peers of the realm, {s10} has decided to confer {s11} on you. You may decline the honour, but it will probably mean that you will not receive other awards for a little while.{s12}",
     "none",
     [
 	(faction_get_slot, ":leader", "$players_kingdom", slot_faction_leader),

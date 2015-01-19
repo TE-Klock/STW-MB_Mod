@@ -468,15 +468,15 @@ particle_systems = [
     ),
     
     ("pistol_smoke", psf_billboard_3d, "prtcl_dust_a",
-     90, 2.5, 0.6, -0.2, 60.0, 1.5,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
-     (0.0, 0.75), (1, 0),       #alpha keys
+     650, 17.0, 0.6, 0.0, 1.0, 1.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.6), (1, 0),       #alpha keys
      (0.0, 0.7), (1, 0.4),      #red keys
      (0.0, 0.7),(1, 0.4),       #green keys
      (0.0, 0.7), (1, 0.4),      #blue keys
-     (0, 1.5),   (0.5, 11.0),   #scale keys
-     (0.1, 0.1, 0.1),           #emit box size
-     (2, 2, 0),                 #emit velocity
-     0.1                        #emit dir randomness
+     (0, 4.0),   (4.0, 235.0),   #scale keys
+     (0.1, 0.5, 0.1),           #emit box size
+     (0.0, 2.5, 0.0),                 #emit velocity
+     0.4                        #emit dir randomness
     ),
     
 #    ("cooking_fire", psf_billboard_3d|psf_global_emit_dir|psf_always_emit, "prtcl_fire",

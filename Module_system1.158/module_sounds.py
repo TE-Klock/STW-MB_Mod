@@ -153,7 +153,7 @@ sounds = [
  ("mp_arrow_hit_target",sf_2d|sf_priority_15|sf_vol_9, ["mp_arrow_hit_target.ogg"]),
  ("blunt_hit",sf_priority_5|sf_vol_9, ["punch_1.ogg","punch_4.ogg","punch_4.ogg","punch_5.ogg"]),
  ("player_hit_by_arrow",sf_priority_10|sf_vol_10, ["player_hit_by_arrow.ogg"]),
- ("pistol_shot",sf_priority_10|sf_vol_10, ["Musket_Fire_01.wav","Musket_Fire_02.wav","Musket_Fire_03.wav","Musket_Fire_04.wav","Musket_Fire_05.wav"]),
+ ("pistol_shot",sf_priority_10|sf_vol_10, ["Musket_Fire01.wav","Musket_Fire02.wav","Musket_Fire03.wav","Musket_Fire04.wav","Musket_Fire05.wav"]),
  ("man_grunt",sf_priority_6|sf_vol_4, ["man_excercise_1.ogg","man_excercise_2.ogg","man_excercise_4.ogg"]),
  ("man_breath_hard",sf_priority_3|sf_vol_8, ["man_ugh_1.ogg","man_ugh_2.ogg","man_ugh_4.ogg","man_ugh_7.ogg","man_ugh_12.ogg","man_ugh_13.ogg","man_ugh_17.ogg"]),
  ("man_stun",sf_priority_3|sf_vol_8, ["man_stun_1.ogg"]),

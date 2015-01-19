@@ -117,7 +117,7 @@ scripts = [
 	  # Cultures:
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_1_troop, "trp_swadian_recruit"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_2_troop, "trp_swadian_militia"),
-      (faction_set_slot, "fac_culture_1",  slot_faction_tier_3_troop, "trp_swadian_footman"),
+      (faction_set_slot, "fac_culture_1",  slot_faction_tier_3_troop, "trp_townguard_01"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_4_troop, "trp_swadian_infantry"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_5_troop, "trp_kalmar_knight"),
 
@@ -151,6 +151,12 @@ scripts = [
       (faction_set_slot, "fac_culture_6", slot_faction_tier_4_troop, "trp_sarranid_horseman"),
       (faction_set_slot, "fac_culture_6", slot_faction_tier_5_troop, "trp_sarranid_mamluke"),
 
+	  (faction_set_slot, "fac_culture_french", slot_faction_tier_1_troop, "trp_sarranid_recruit"),
+      (faction_set_slot, "fac_culture_french", slot_faction_tier_2_troop, "trp_sarranid_footman"),
+      (faction_set_slot, "fac_culture_french", slot_faction_tier_3_troop, "trp_sarranid_archer"),
+      (faction_set_slot, "fac_culture_french", slot_faction_tier_4_troop, "trp_sarranid_horseman"),
+      (faction_set_slot, "fac_culture_french", slot_faction_tier_5_troop, "trp_sarranid_mamluke"),
+	  
       (faction_set_slot, "fac_culture_1", slot_faction_town_walker_male_troop, "trp_town_walker_1"),
       (faction_set_slot, "fac_culture_1", slot_faction_town_walker_female_troop, "trp_town_walker_2"),
       (faction_set_slot, "fac_culture_1", slot_faction_village_walker_male_troop, "trp_village_walker_1"),
@@ -505,28 +511,28 @@ scripts = [
 	  #5 Rhodoks = 
 	  #6 Sarranid =
 	  #Give centers to factions first, to ensure more equal distributions
-	  (call_script, "script_give_center_to_faction_aux", "p_town_1", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_2", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_3", "fac_kingdom_5"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_4", "fac_kingdom_1"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_5", "fac_kingdom_5"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_6", "fac_kingdom_1"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_7", "fac_kingdom_1"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_8", "fac_kingdom_2"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_9", "fac_kingdom_2"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_10", "fac_kingdom_3"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_11", "fac_kingdom_2"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_12", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_13", "fac_kingdom_3"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_14", "fac_kingdom_3"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_15", "fac_kingdom_5"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_16", "fac_kingdom_1"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_17", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_18", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_19", "fac_kingdom_6"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_20", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_21", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_22", "fac_kingdom_4"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_1", "fac_kingdom_4"),  #Mora
+	  (call_script, "script_give_center_to_faction_aux", "p_town_2", "fac_kingdom_4"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_3", "fac_kingdom_5"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_4", "fac_kingdom_1"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_5", "fac_kingdom_5"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_6", "fac_kingdom_1"),  #Köpenhamn
+	  (call_script, "script_give_center_to_faction_aux", "p_town_7", "fac_kingdom_1"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_8", "fac_kingdom_2"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_9", "fac_kingdom_2"),  #
+	  (call_script, "script_give_center_to_faction_aux", "p_town_10", "fac_kingdom_3"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_11", "fac_kingdom_2"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_12", "fac_kingdom_4"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_13", "fac_kingdom_3"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_14", "fac_kingdom_3"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_15", "fac_kingdom_5"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_16", "fac_kingdom_1"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_17", "fac_kingdom_4"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_18", "fac_kingdom_4"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_19", "fac_kingdom_6"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_20", "fac_kingdom_4"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_21", "fac_kingdom_4"),#
+	  (call_script, "script_give_center_to_faction_aux", "p_town_22", "fac_kingdom_4"),#
 	  
       (call_script, "script_give_center_to_faction_aux", "p_castle_1", "fac_kingdom_5"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_2", "fac_kingdom_3"),
@@ -629,11 +635,11 @@ scripts = [
       (try_end),
 	  	  
 	  #set territorial disputes/outstanding border issues 
-	  (party_set_slot, "p_castle_10", slot_center_ex_faction, "fac_kingdom_2"), #vaegirs claim nord-held alburq
-	  (party_set_slot, "p_castle_13", slot_center_ex_faction, "fac_kingdom_4"), #nords claim swadian-held kelredan
-	  (party_set_slot, "p_castle_15", slot_center_ex_faction, "fac_kingdom_1"), #swadians claim rhodok-held ergelon
-	  (party_set_slot, "p_castle_46", slot_center_ex_faction, "fac_kingdom_5"), #rhodoks claim sarranid-held weyyah
-	  (party_set_slot, "p_castle_40", slot_center_ex_faction, "fac_kingdom_6"), #sarranids claim khergit-held uhhun
+	  #(party_set_slot, "p_castle_10", slot_center_ex_faction, "fac_kingdom_2"), #vaegirs claim nord-held alburq
+	  #(party_set_slot, "p_castle_13", slot_center_ex_faction, "fac_kingdom_4"), #nords claim swadian-held kelredan
+	  #(party_set_slot, "p_castle_15", slot_center_ex_faction, "fac_kingdom_1"), #swadians claim rhodok-held ergelon
+	  #(party_set_slot, "p_castle_46", slot_center_ex_faction, "fac_kingdom_5"), #rhodoks claim sarranid-held weyyah
+	  #(party_set_slot, "p_castle_40", slot_center_ex_faction, "fac_kingdom_6"), #sarranids claim khergit-held uhhun
 	  
 	  #Swedes want back Major cities
 	  (party_set_slot, "p_town_4", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Stockholm
@@ -641,7 +647,8 @@ scripts = [
 	  (party_set_slot, "p_town_7", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Kalmar
 	  (party_set_slot, "p_town_13", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Gothenburg
 	  (party_set_slot, "p_town_3", slot_center_ex_faction, "fac_kingdom_4"), #Swedes claim kalmar held Örebro
-	  #Kalmar holding claim to the Rebellious Swedes., being in the middle, will have additional claims on two of their neighhbors
+	  
+	  #The Kalmar union wants back Major cities held by the Swedish Separatists
 	  (party_set_slot, "p_town_1", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim sweidish-held mora
 	  (party_set_slot, "p_town_12", slot_center_ex_faction, "fac_kingdom_1"), #Kalmar claim swedish-held gävle	  	  	  	  
 	  
@@ -27961,6 +27968,20 @@ scripts = [
       (neq, reg0, -1),
   ]),
   
+    ("cb_on_bullet_hit", 
+  [
+	(store_trigger_param_2, ":collision_type"),
+	(try_begin),
+		(this_or_next|eq, ":collision_type", 0),
+		(eq, ":collision_type", 3),
+		(particle_system_burst_no_sync, "psys_flue_smoke_tall", pos1, 8),
+		(particle_system_burst_no_sync, "psys_flue_smoke_tall", pos1, 8),
+	(else_try),
+		(this_or_next|eq, ":collision_type", 2),
+		(eq, ":collision_type", 4),
+		(particle_system_burst_no_sync, "psys_flue_smoke_tall", pos1, 8),
+	(try_end),
+  ]), 	
   
   # script_cf_team_get_average_position_of_agents_with_type_to_pos1
   # Input: arg1 = team_no, arg2 = class_no (grc_everyone, grc_infantry, grc_cavalry, grc_archers, grc_heroes)
@@ -33716,7 +33737,7 @@ scripts = [
 		(troop_set_slot, "trp_npc14", slot_troop_kingsupport_argument, argument_victory),
 		(troop_set_slot, "trp_npc14", slot_troop_kingsupport_opponent, "trp_npc11"), #nizar
 		(troop_set_slot, "trp_npc14", slot_troop_town_with_contacts, "p_town_16"), #dhirim
-		(troop_set_slot, "trp_npc14", slot_troop_original_faction, 0), #	
+		(troop_set_slot, "trp_npc14", slot_troop_original_faction, fac_culture_french), #	
 		(troop_set_slot, "trp_npc14", slot_lord_reputation_type, lrep_selfrighteous), #
 
 
@@ -47191,7 +47212,7 @@ scripts = [
      #(try_end),  
                
      #(set_visitor, 3, ":bandit_troop"),
-     (set_visitor, 3, "trp_bandit"),
+     (set_visitor, 3, "trp_butterlord"),
 
      (assign, "$talked_with_merchant", 0),
      (set_jump_mission, "mt_alley_fight"),
@@ -47235,7 +47256,7 @@ scripts = [
      (set_visitors, 27, ":tier_4_troop", 1),
     
      (set_visitors, 10, "trp_looter", 1),
-     (set_visitors, 11, "trp_bandit", 1),
+     (set_visitors, 11, "trp_looter", 1),
      (set_visitors, 12, "trp_looter", 1),    
 
      (store_faction_of_party, ":starting_town_faction", "$g_starting_town"),    
